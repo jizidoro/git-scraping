@@ -29,7 +29,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\GitScraping.Domain\GitScraping.Domain.csproj" />
-    <ProjectReference Include="..\..\src\GitScraping.Infrastructure\GitScraping.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\GitScraping.WebApi\GitScraping.WebApi.csproj" />
   </ItemGroup>
 

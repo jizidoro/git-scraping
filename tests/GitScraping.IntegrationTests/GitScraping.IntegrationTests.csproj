@@ -37,13 +37,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\GitScraping.Application\GitScraping.Application.csproj" />
-    <ProjectReference Include="..\..\src\GitScraping.Infrastructure\GitScraping.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\GitScraping.WebApi\GitScraping.WebApi.csproj" />
     <ProjectReference Include="..\GitScraping.UnitTests\GitScraping.UnitTests.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Helpers\" />
+    <Folder Include="Tests\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>

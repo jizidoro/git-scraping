@@ -6,7 +6,6 @@ using System.Net.Mime;
 using System.Text.Json;
 using System.Threading.Tasks;
 using GitScraping.Core.Helpers.Extensions;
-using GitScraping.Infrastructure.DataAccess;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
@@ -47,10 +46,6 @@ namespace GitScraping.WebApi.Modules
 
             if (isEnabled)
             {
-                services.AddHealthChecks()
-                    .AddDbContextCheck<GitScrapingContext>("GitScrapingContext")
-                    .AddApplicationInsightsPublisher();
-
                 services.AddHealthChecksUI()
                     .AddInMemoryStorage();
 

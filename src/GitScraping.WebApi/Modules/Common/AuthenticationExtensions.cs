@@ -1,8 +1,6 @@
 #region
 
 using System.Text;
-using GitScraping.Core.SecurityCore;
-using GitScraping.Core.SecurityCore.Usecase;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
@@ -35,9 +33,7 @@ namespace GitScraping.WebApi.Modules.Common
                 .ConfigureAwait(false)
                 .GetAwaiter()
                 .GetResult();
-
-            services.AddScoped<IGerarTokenLoginUsecase, GerarTokenLoginUsecase>();
-
+            
             services.AddAuthentication(x =>
                 {
                     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

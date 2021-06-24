@@ -102,7 +102,6 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\GitScraping.Application\GitScraping.Application.csproj" />
-		<ProjectReference Include="..\GitScraping.Infrastructure\GitScraping.Infrastructure.csproj" />
 	</ItemGroup>
 
 </Project>

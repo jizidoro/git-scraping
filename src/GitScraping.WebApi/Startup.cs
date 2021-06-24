@@ -5,7 +5,6 @@ using GitScraping.Application.Services;
 using GitScraping.Core.Helpers.Extensions;
 using GitScraping.Core.Helpers.Interfaces;
 using GitScraping.Core.Helpers.Models;
-using GitScraping.Infrastructure.Bases;
 using GitScraping.WebApi.Modules;
 using GitScraping.WebApi.Modules.Common;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
@@ -47,8 +46,6 @@ namespace GitScraping.WebApi
             services
                 .AddFeatureFlags(Configuration)
                 .AddInvalidRequestLogging()
-                .AddSqlServer(Configuration)
-                .AddEntityRepository(Configuration)
                 .AddHealthChecks(Configuration)
                 .AddAuthentication(Configuration)
                 .AddVersioning()
@@ -61,10 +58,7 @@ namespace GitScraping.WebApi
 
             services.AddAutoMapperSetup();
             services.AddLogging();
-
-            services.AddScoped(typeof(ILookupServiceApp<>), typeof(LookupServiceApp<>));
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-
+            
             services.AddScoped<IPasswordHasher, PasswordHasher>();
             services.AddScoped<HashingOptions>();
         }

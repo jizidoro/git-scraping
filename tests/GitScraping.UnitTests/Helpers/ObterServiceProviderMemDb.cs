@@ -3,7 +3,6 @@
 using GitScraping.Application.Interfaces;
 using GitScraping.Application.Services;
 using GitScraping.Core.Helpers.Interfaces;
-using GitScraping.Infrastructure.Bases;
 using GitScraping.WebApi.Modules;
 using GitScraping.WebApi.Modules.Common;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
@@ -29,8 +28,6 @@ namespace GitScraping.UnitTests.Helpers
             services
                 .AddFeatureFlags(configuration)
                 .AddInvalidRequestLogging()
-                .AddSqlServerFake(configuration)
-                .AddEntityRepository(configuration)
                 .AddHealthChecks(configuration)
                 .AddAuthentication(configuration)
                 .AddVersioning()
@@ -44,10 +41,7 @@ namespace GitScraping.UnitTests.Helpers
             services.AddAutoMapperSetup();
 
             services.AddLogging();
-
-            services.AddScoped(typeof(ILookupServiceApp<>), typeof(LookupServiceApp<>));
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-
+            
             services.AddControllersWithViews()
                 .AddNewtonsoftJson(options =>
                     options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
