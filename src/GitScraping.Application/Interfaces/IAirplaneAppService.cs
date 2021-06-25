@@ -12,6 +12,6 @@ namespace GitScraping.Application.Interfaces
 {
     public interface IAirplaneAppService : IAppService
     {
-        Task<IPageResultDto<AirplaneDto>> Listar(PaginationFilter paginationFilter = null);
+        Task<ListResultDto<AirplaneDto>> Listar(PaginationFilter paginationFilter = null);
     }
 }

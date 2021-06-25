@@ -10,14 +10,13 @@ using GitScraping.Application.Interfaces;
 using GitScraping.Application.Queries;
 using GitScraping.WebApi.Bases;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.FeatureManagement.Mvc;
 
 #endregion
 
-namespace GitScraping.WebApi.UseCases.V1.AirplaneApi
+namespace GitScraping.WebApi.Controllers.V1.AirplaneApi
 {
     [FeatureGate(CustomFeature.Airplane)]
     [ApiVersion("1.0")]

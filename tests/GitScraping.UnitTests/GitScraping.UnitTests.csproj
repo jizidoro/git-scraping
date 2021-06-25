@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AngleSharp" Version="0.16.0" />
+    <PackageReference Include="AutoFixture" Version="4.11.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.7" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
@@ -30,10 +31,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\GitScraping.Domain\GitScraping.Domain.csproj" />
     <ProjectReference Include="..\..\src\GitScraping.WebApi\GitScraping.WebApi.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Tests\" />
   </ItemGroup>
 
 </Project>

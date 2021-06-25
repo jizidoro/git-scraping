@@ -15,11 +15,17 @@
 		<PackageReference Include="DocumentFormat.OpenXml" Version="2.13.0" />
 		<PackageReference Include="FluentValidation" Version="10.2.3" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+		<PackageReference Include="Octokit" Version="0.50.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\GitScraping.Core\GitScraping.Core.csproj" />
 		<ProjectReference Include="..\GitScraping.Domain\GitScraping.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Validations\" />
 	</ItemGroup>
 
 </Project>

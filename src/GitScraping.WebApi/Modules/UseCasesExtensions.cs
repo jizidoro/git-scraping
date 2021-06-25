@@ -25,6 +25,7 @@ namespace GitScraping.WebApi.Modules
 
             // Application - Services
             services.AddScoped<IAirplaneAppService, AirplaneAppService>();
+            services.AddScoped<IHttpClientHelper, HttpClientHelper>();
 
             #endregion
             
