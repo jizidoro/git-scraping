@@ -22,23 +22,4 @@
 		<ProjectReference Include="..\GitScraping.Domain\GitScraping.Domain.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<Compile Update="Messages\MensagensAplicacao.Designer.cs">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>MensagensAplicacao.resx</DependentUpon>
-		</Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-		<EmbeddedResource Update="Messages\MensagensAplicacao.resx">
-			<Generator>PublicResXFileCodeGenerator</Generator>
-			<LastGenOutput>MensagensAplicacao.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="Imports\ImportMappings\" />
-	</ItemGroup>
-
 </Project>

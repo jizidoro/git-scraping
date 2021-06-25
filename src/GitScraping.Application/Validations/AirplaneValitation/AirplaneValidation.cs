@@ -2,7 +2,6 @@
 
 using GitScraping.Application.Bases;
 using GitScraping.Application.Dtos.AirplaneDtos;
-using GitScraping.Application.Messages;
 using FluentValidation;
 
 #endregion
@@ -21,24 +20,24 @@ namespace GitScraping.Application.Validations.AirplaneValitation
         protected void ValidarCodigo()
         {
             RuleFor(v => v.Codigo)
-                .NotEmpty().WithMessage(MensagensAplicacao.CAMPO_OBRIGATORIO)
-                .MaximumLength(255).WithMessage(MensagensAplicacao.TAMANHO_ESPECIFICO_CAMPO)
+                .NotEmpty()
+                .MaximumLength(255)
                 .WithName("Codigo");
         }
 
         protected void ValidarModelo()
         {
             RuleFor(v => v.Modelo)
-                .NotEmpty().WithMessage(MensagensAplicacao.CAMPO_OBRIGATORIO)
-                .MaximumLength(255).WithMessage(MensagensAplicacao.TAMANHO_ESPECIFICO_CAMPO)
+                .NotEmpty()
+                .MaximumLength(255)
                 .WithName("Modelo");
         }
 
         protected void ValidarQuantidadePassageiro()
         {
             RuleFor(v => v.QuantidadePassageiro)
-                .NotEmpty().WithMessage(MensagensAplicacao.CAMPO_OBRIGATORIO)
-                .GreaterThanOrEqualTo(0).WithMessage(MensagensAplicacao.CAMPO_MAIOR_IGUAL_ZERO)
+                .NotEmpty()
+                .GreaterThanOrEqualTo(0)
                 .WithName("QuantidadePassageiro");
         }
     }

@@ -4,8 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Extensions.Logging;
 
 #endregion
 
@@ -45,6 +48,20 @@ namespace GitScraping.WebApi.Modules.Common
             });
 
             return services;
+        }
+
+        public static void CreateLogMongoDb(LoggerProviderCollection providers, IConfigurationRoot configurationRoot)
+        {
+            var connection = configurationRoot.GetValue<string>("ConnectionStrings:DefaultConnection");
+
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Information()
+                .Enrich.With(new ApplicationDetailsEnricher())
+                .Enrich.FromLogContext()
+                .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day)
+                .WriteTo.MongoDB("mongodb://localhost/local")
+                .WriteTo.Providers(providers)
+                .CreateLogger();
         }
     }
 }

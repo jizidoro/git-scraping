@@ -32,4 +32,8 @@
     <ProjectReference Include="..\..\src\GitScraping.WebApi\GitScraping.WebApi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Tests\" />
+  </ItemGroup>
+
 </Project>

@@ -35,8 +35,7 @@ namespace GitScraping.UnitTests.Helpers
                 .AddUseCases()
                 .AddCustomControllers()
                 .AddCustomCors()
-                .AddProxy()
-                .AddCustomDataProtection();
+                .AddProxy();
 
             services.AddAutoMapperSetup();
 

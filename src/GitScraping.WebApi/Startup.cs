@@ -53,8 +53,7 @@ namespace GitScraping.WebApi
                 .AddUseCases()
                 .AddCustomControllers()
                 .AddCustomCors()
-                .AddProxy()
-                .AddCustomDataProtection();
+                .AddProxy();
 
             services.AddAutoMapperSetup();
             services.AddLogging();
