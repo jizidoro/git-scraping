@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace GitScraping.Core.Utils
+namespace GitScraping.Domain.Utils
 {
     public class User
     {

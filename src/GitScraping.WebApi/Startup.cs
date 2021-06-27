@@ -57,9 +57,6 @@ namespace GitScraping.WebApi
 
             services.AddAutoMapperSetup();
             services.AddLogging();
-            
-            services.AddScoped<IPasswordHasher, PasswordHasher>();
-            services.AddScoped<HashingOptions>();
         }
 
         /// <summary>

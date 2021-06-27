@@ -22,7 +22,6 @@ namespace GitScraping.Application.Bases
             Data = data;
             Codigo = data == null ? (int) EnumResultadoAcao.ErroNaoEncontrado : (int) EnumResultadoAcao.Sucesso;
             Sucesso = data != null;
-            Mensagem = data == null ? MensagensNegocio.ResourceManager.GetString("MSG04") : string.Empty;
         }
 
         public PageResultDto(PaginationFilter pagination, IList<T> data)
@@ -34,7 +33,6 @@ namespace GitScraping.Application.Bases
             PreviusPage = pagination.PageNumber > 1 ? pagination.PageNumber - 1 : null;
             Codigo = data == null ? (int) EnumResultadoAcao.ErroNaoEncontrado : (int) EnumResultadoAcao.Sucesso;
             Sucesso = data != null;
-            Mensagem = data == null ? MensagensNegocio.ResourceManager.GetString("MSG04") : string.Empty;
         }
 
         public int? PageNumber { get; set; }

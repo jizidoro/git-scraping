@@ -4,7 +4,7 @@ using GitScraping.Domain.Enums;
 
 #endregion
 
-namespace GitScraping.Core.Utils
+namespace GitScraping.Domain.Utils
 {
     public class SecurityResult
     {

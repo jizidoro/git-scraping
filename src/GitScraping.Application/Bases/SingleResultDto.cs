@@ -7,9 +7,9 @@ using AutoMapper;
 using GitScraping.Application.Utils;
 using GitScraping.Core.Helpers.Interfaces;
 using GitScraping.Core.Helpers.Messages;
-using GitScraping.Core.Utils;
 using GitScraping.Domain.Bases;
 using GitScraping.Domain.Enums;
+using GitScraping.Domain.Utils;
 
 #endregion
 
@@ -22,7 +22,6 @@ namespace GitScraping.Application.Bases
         {
             Codigo = data == null ? (int) EnumResultadoAcao.ErroNaoEncontrado : (int) EnumResultadoAcao.Sucesso;
             Sucesso = data != null;
-            Mensagem = data == null ? MensagensNegocio.ResourceManager.GetString("MSG04") : string.Empty;
             Data = data;
         }
 
@@ -30,7 +29,6 @@ namespace GitScraping.Application.Bases
         {
             Codigo = (int) EnumResultadoAcao.ErroNaoEncontrado;
             Sucesso = false;
-            Mensagem = MensagensNegocio.ResourceManager.GetString("MSG04");
             Data = null;
         }
 
@@ -38,7 +36,6 @@ namespace GitScraping.Application.Bases
         {
             Codigo = erroSecurity.Code;
             Sucesso = false;
-            Mensagem = erroSecurity.ErrorMessage;
             Data = null;
         }
 
@@ -47,28 +44,18 @@ namespace GitScraping.Application.Bases
         {
             Codigo = (int) EnumResultadoAcao.ErroServidor;
             Sucesso = false;
-            Mensagem = ex.Message;
-        }
-
-        public SingleResultDto(IEnumerable<string> listaErros)
-        {
-            Codigo = (int) EnumResultadoAcao.ErroValidacaoNegocio;
-            Sucesso = false;
-            Mensagens = listaErros.ToList();
         }
 
         public SingleResultDto(IResult result)
         {
             Codigo = result.Codigo;
             Sucesso = result.Sucesso;
-            Mensagem = result.Mensagem;
         }
 
-        public SingleResultDto(int codigo, bool sucesso, string mensagem)
+        public SingleResultDto(int codigo, bool sucesso)
         {
             Codigo = codigo;
             Sucesso = sucesso;
-            Mensagem = mensagem;
         }
 
         public TDto Data { get; private set; }

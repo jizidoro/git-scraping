@@ -46,14 +46,12 @@ namespace GitScraping.Core.Helpers.Models.Results
         {
             Codigo = (int) EnumResultadoAcao.ErroServidor;
             Sucesso = false;
-            Mensagem = MensagensNegocio.ResourceManager.GetString("MSG07");
         }
 
         public SingleResult(TEntity data)
         {
             Codigo = data == null ? (int) EnumResultadoAcao.ErroNaoEncontrado : (int) EnumResultadoAcao.Sucesso;
             Sucesso = data != null;
-            Mensagem = data == null ? MensagensNegocio.ResourceManager.GetString("MSG04") : string.Empty;
             Data = data;
         }
 

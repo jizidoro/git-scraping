@@ -1,13 +1,15 @@
 ﻿#region
 
-using System.Collections.Generic;
-using System.IO;
-using GitScraping.Domain.Bases;
-using Newtonsoft.Json;
 
 #endregion
 
-namespace GitScraping.Infrastructure.Extensions
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using GitScraping.Domain.Bases;
+
+namespace GitScraping.Domain.Utils
 {
     public static class JsonUtilities
     {
@@ -17,7 +19,11 @@ namespace GitScraping.Infrastructure.Extensions
             var reader = new StreamReader(jsonStream);
             var jsonString = reader.ReadToEnd();
 
-            var list = JsonConvert.DeserializeObject<List<TTargetModel>>(jsonString);
+            var options = new JsonSerializerOptions();
+            options.PropertyNameCaseInsensitive = true;
+            options.Converters.Add(new JsonStringEnumConverter());
+
+            var list = JsonSerializer.Deserialize<List<TTargetModel>>(jsonString, options);
 
             return list;
         }

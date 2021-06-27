@@ -9,6 +9,5 @@ namespace GitScraping.Application.Utils
 {
     public interface IResultDto : IResult
     {
-        IList<string> Mensagens { get; set; }
     }
 }

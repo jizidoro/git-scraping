@@ -10,7 +10,6 @@ using GitScraping.Application.Interfaces;
 
 namespace GitScraping.Application.Services
 {
-
     public class HttpClientHelper : IHttpClientHelper
     {
         public HttpClient HttpClient { get; set; }
@@ -31,21 +30,21 @@ namespace GitScraping.Application.Services
 
             throw new HttpRequestException(response.Content.ReadAsStringAsync().Result);
         }
+
         private HttpClient GetHttpClient()
         {
-            if (HttpClient == null)//While mocking we set httpclient object to bypass actual result.
+            if (HttpClient == null)
             {
                 return new HttpClient
                 {
                     BaseAddress = new Uri("https://api.github.com"),
                     DefaultRequestHeaders =
                     {
-                        // NOTE: You'll have to set up Authentication tokens in real use scenario
-                        // NOTE: as without it you're subject to harsh rate limits.
                         {"User-Agent", "Github-API-Test"}
                     }
                 };
             }
+
             return HttpClient;
         }
 
@@ -53,7 +52,7 @@ namespace GitScraping.Application.Services
         {
             if (typeof(TResult).IsAssignableFrom(typeof(HttpResponseMessage)))
             {
-                t = (TResult)Convert.ChangeType(response, typeof(TResult));
+                t = (TResult) Convert.ChangeType(response, typeof(TResult));
                 return true;
             }
 

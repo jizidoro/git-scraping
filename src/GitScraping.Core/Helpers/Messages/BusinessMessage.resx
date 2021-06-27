@@ -117,37 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MSG01" xml:space="preserve">
-    <value>Registro Incluído com Sucesso!</value>
-  </data>
-  <data name="MSG02" xml:space="preserve">
-    <value>Registro Alterado com Sucesso!</value>
-  </data>
-  <data name="MSG03" xml:space="preserve">
-    <value>Registro Excluído com Sucesso!</value>
-  </data>
-  <data name="MSG04" xml:space="preserve">
-    <value>Registro não Existe!</value>
-  </data>
-  <data name="MSG05" xml:space="preserve">
-    <value>Nenhum registro encontrado.</value>
-  </data>
-  <data name="MSG06" xml:space="preserve">
-    <value>Registro já existe para a Unidade, Data e Hora informados. Registro não foi salvo.</value>
-  </data>
-  <data name="MSG07" xml:space="preserve">
-    <value>Ocorreu um erro ao tentar salvar o registro no banco de dados, caso o problema persista, por favor entrar em contato com o suporte.</value>
-  </data>
-  <data name="MSG08" xml:space="preserve">
-    <value>Registro já existe com mesmo codigo, por favor informe outro codigo.</value>
-  </data>
-  <data name="MSG09" xml:space="preserve">
-    <value>Codigo do cargo invalido.</value>
-  </data>
-  <data name="BAUSU0001" xml:space="preserve">
-    <value>Nome não existe no banco.</value>
-  </data>
-  <data name="LKUP2001" xml:space="preserve">
-    <value>Não atingiu o número minimo de caracteres.</value>
+  <data name="MSG001" xml:space="preserve">
+    <value>Error</value>
   </data>
 </root>

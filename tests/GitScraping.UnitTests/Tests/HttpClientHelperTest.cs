@@ -1,8 +1,5 @@
-﻿using Moq;
-using Moq.Protected;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
@@ -10,9 +7,11 @@ using System.Threading.Tasks;
 using AutoFixture;
 using GitScraping.Application.Dtos.AirplaneDtos;
 using GitScraping.Application.Services;
+using Moq;
+using Moq.Protected;
 using Xunit;
 
-namespace Demo.Test
+namespace GitScraping.UnitTests.Tests
 {
     public class HttpClientHelperTest
     {

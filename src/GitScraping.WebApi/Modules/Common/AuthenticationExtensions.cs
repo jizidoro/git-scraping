@@ -33,25 +33,6 @@ namespace GitScraping.WebApi.Modules.Common
                 .ConfigureAwait(false)
                 .GetAwaiter()
                 .GetResult();
-            
-            services.AddAuthentication(x =>
-                {
-                    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                })
-                .AddJwtBearer(x =>
-                {
-                    x.RequireHttpsMetadata = false;
-                    x.SaveToken = true;
-                    x.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["jwt:key"])),
-                        ValidateIssuer = false,
-                        ValidateAudience = false
-                    };
-                });
-
 
             return services;
         }

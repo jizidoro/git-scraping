@@ -41,12 +41,6 @@ namespace GitScraping.UnitTests.Helpers
 
             services.AddLogging();
             
-            services.AddControllersWithViews()
-                .AddNewtonsoftJson(options =>
-                    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                );
-
-            // Create the service provider instance
             return services.BuildServiceProvider();
         }
     }

@@ -21,21 +21,12 @@ namespace GitScraping.Application.Bases
             Data = data;
             Codigo = data == null ? (int) EnumResultadoAcao.ErroNaoEncontrado : (int) EnumResultadoAcao.Sucesso;
             Sucesso = data != null;
-            Mensagem = data == null ? MensagensNegocio.ResourceManager.GetString("MSG04") : string.Empty;
         }
 
-        public ListResultDto(int codigo, string menssagem)
+        public ListResultDto(int codigo)
         {
             Codigo = codigo;
             Sucesso = false;
-            Mensagem = menssagem;
-        }
-
-        public ListResultDto(string menssagem)
-        {
-            Codigo = (int) EnumResultadoAcao.ErroValidacaoNegocio;
-            Sucesso = false;
-            Mensagem = menssagem;
         }
 
         public IList<T> Data { get; set; }

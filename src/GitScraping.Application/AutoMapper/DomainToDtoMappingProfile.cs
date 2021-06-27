@@ -16,9 +16,8 @@ namespace GitScraping.Application.AutoMapper
         public DomainToDtoMappingProfile()
         {
             CreateMap<Entity, EntityDto>();
-
-            CreateMap<Airplane, AirplaneEditarDto>();
-            CreateMap<Airplane, AirplaneDto>();
+            
+            CreateMap<ExtractedFile, AirplaneDto>();
         }
     }
 }

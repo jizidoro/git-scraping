@@ -13,7 +13,7 @@ namespace GitScraping.Application.AutoMapper
     {
         public DtoToDomainMappingProfile()
         {
-            CreateMap<AirplaneIncluirDto, Airplane>();
+            CreateMap<AirplaneDto, ExtractedFile>();
         }
     }
 }

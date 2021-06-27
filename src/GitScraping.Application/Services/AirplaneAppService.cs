@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using GitScraping.Application.Bases;
@@ -38,20 +39,24 @@ namespace GitScraping.Application.Services
             var path = "/";
 
             var files = new List<AirplaneDto>();
-            var client = new GitHubClient(new ProductHeaderValue("Github-API-Test"));
 
-            ListContentsOctokit(repoOwner, repoName, path, client, files);
+            var productInformation = new ProductHeaderValue("Github-API-Test");
+            var credentials = new Credentials("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");
+            var client = new GitHubClient(productInformation) {Credentials = credentials};
+
+            // await ListContentsOctokit(repoOwner, repoName, path, client, files);
+            await ListContentsCommitOctokit(repoOwner, repoName, client);
 
             var httpClientResults = await ListContents(repoOwner, repoName, path);
 
-            return new ListResultDto<AirplaneDto>(httpClientResults);
+            return new ListResultDto<AirplaneDto>(lista);
         }
 
-        public async Task<IList<AirplaneDto>> ListContents(string repoOwner, string repoName, string path)
+        public async Task<IList<HttpAirplaneDto>> ListContents(string repoOwner, string repoName, string path)
         {
             try
             {
-                var resp = await _httpClientHelper.GetAsync<List<AirplaneDto>>(
+                var resp = await _httpClientHelper.GetAsync<List<HttpAirplaneDto>>(
                     $"repos/{repoOwner}/{repoName}/contents/{path}");
 
                 return resp;
@@ -63,7 +68,15 @@ namespace GitScraping.Application.Services
             }
         }
 
-        public async void ListContentsOctokit(string repoOwner, string repoName, string path, GitHubClient client,
+        public async Task ListContentsCommitOctokit(string repoOwner, string repoName, GitHubClient client)
+        {
+            var tipCommit = await client.Repository.Commit.Get(repoOwner, repoName, "master");
+            var allPaths = tipCommit.Files.Select(f => f.Filename);
+
+            var stats = new Dictionary<string, int>();
+        }
+
+        public async Task ListContentsOctokit(string repoOwner, string repoName, string path, GitHubClient client,
             List<AirplaneDto> files)
         {
             var contents = await client.Repository.Content.GetAllContents(repoOwner, repoName, path);
@@ -87,7 +100,7 @@ namespace GitScraping.Application.Services
 
             foreach (var dir in dirs)
             {
-                ListContentsOctokit(repoOwner, repoName, dir.Path, client, files);
+                await ListContentsOctokit(repoOwner, repoName, dir.Path, client, files);
             }
         }
     }
