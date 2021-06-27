@@ -33,25 +33,33 @@ namespace GitScraping.Application.Services
 
         public async Task<List<ProcessedFileDto>> Listar()
         {
-            var repoOwner = "yakkumo";
-            var repoName = "git-scraping";
-            var path = "/";
+            try
+            {
+                var repoOwner = "yakkumo";
+                var repoName = "git-scraping";
+                var path = "/";
 
-            var files = new List<ExtractedFileDto>();
+                var files = new List<ExtractedFileDto>();
 
-            var productInformation = new ProductHeaderValue("Github-API-Test");
-            var credentials = new Credentials("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");
-            var client = new GitHubClient(productInformation) {Credentials = credentials};
+                var productInformation = new ProductHeaderValue("Github-API-Test");
+                var credentials = new Credentials("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");
+                var client = new GitHubClient(productInformation) {Credentials = credentials};
 
-            await ListContentsOctokit(repoOwner, repoName, path, client, files);
+                await ListContentsOctokit(repoOwner, repoName, path, client, files);
 
-            var entity = Mapper.Map<List<ExtractedFile>>(files);
+                var entity = Mapper.Map<List<ExtractedFile>>(files);
 
-            var teste = _processFilesUseCaseUsecase.Execute(entity);
+                var teste = _processFilesUseCaseUsecase.Execute(entity);
 
-            var result = Mapper.Map<List<ProcessedFileDto>>(teste);
+                var result = Mapper.Map<List<ProcessedFileDto>>(teste);
 
-            return new List<ProcessedFileDto>(result);
+                return new List<ProcessedFileDto>(result);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public async Task ListContentsOctokit(string repoOwner, string repoName, string path, GitHubClient client,

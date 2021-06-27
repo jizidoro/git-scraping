@@ -17,6 +17,7 @@ namespace GitScraping.Application.AutoMapper
             CreateMap<Entity, EntityDto>();
 
             CreateMap<ExtractedFile, ExtractedFileDto>();
+            CreateMap<ProcessedFile, ProcessedFileDto>();
         }
     }
 }
