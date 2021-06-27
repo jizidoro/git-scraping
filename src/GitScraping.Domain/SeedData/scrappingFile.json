@@ -3,6 +3,9 @@
     "name": ".gitattributes",
     "path": ".gitattributes",
     "sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+    "content": null,
+    "encodedContent": null,
+    "lines": 3,
     "size": 66,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.gitattributes?ref=master",
     "type": {
@@ -14,6 +17,9 @@
     "name": ".gitignore",
     "path": ".gitignore",
     "sha": "5aeb2ef7d4da642dde9d842379e3d152d709146a",
+    "content": null,
+    "encodedContent": null,
+    "lines": 13,
     "size": 90,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.gitignore?ref=master",
     "type": {
@@ -25,6 +31,9 @@
     "name": "GitScraping.sln",
     "path": "GitScraping.sln",
     "sha": "4be03a8345ae86d041cf78c782564e3384b68baf",
+    "content": null,
+    "encodedContent": null,
+    "lines": 80,
     "size": 5414,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/GitScraping.sln?ref=master",
     "type": {
@@ -36,6 +45,9 @@
     "name": "LICENSE",
     "path": "LICENSE",
     "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "content": null,
+    "encodedContent": null,
+    "lines": 1,
     "size": 0,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/LICENSE?ref=master",
     "type": {
@@ -47,6 +59,9 @@
     "name": "README.md",
     "path": "README.md",
     "sha": "4937b24a81760dfeb7cbb94f944ca5a833c3e0f6",
+    "content": null,
+    "encodedContent": null,
+    "lines": 15,
     "size": 339,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/README.md?ref=master",
     "type": {
@@ -58,6 +73,9 @@
     "name": ".gitignore",
     "path": ".idea/.idea.comrade/.idea/.gitignore",
     "sha": "4c384dc7b704393fd9bc436bed16e45536592ba0",
+    "content": null,
+    "encodedContent": null,
+    "lines": 14,
     "size": 283,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.idea/.idea.comrade/.idea/.gitignore?ref=master",
     "type": {
@@ -69,6 +87,9 @@
     "name": ".name",
     "path": ".idea/.idea.comrade/.idea/.name",
     "sha": "c14d308d61177733d56695afa41d5302ffb0b9ef",
+    "content": null,
+    "encodedContent": null,
+    "lines": 1,
     "size": 11,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.idea/.idea.comrade/.idea/.name?ref=master",
     "type": {
@@ -80,6 +101,9 @@
     "name": "encodings.xml",
     "path": ".idea/.idea.comrade/.idea/encodings.xml",
     "sha": "df87cf951fb4858ab7a76b68dd479c98b2df2404",
+    "content": null,
+    "encodedContent": null,
+    "lines": 4,
     "size": 169,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.idea/.idea.comrade/.idea/encodings.xml?ref=master",
     "type": {
@@ -91,6 +115,9 @@
     "name": "indexLayout.xml",
     "path": ".idea/.idea.comrade/.idea/indexLayout.xml",
     "sha": "7b08163cebc50fb3e777eea4881b68fcebc10590",
+    "content": null,
+    "encodedContent": null,
+    "lines": 8,
     "size": 198,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.idea/.idea.comrade/.idea/indexLayout.xml?ref=master",
     "type": {
@@ -102,6 +129,9 @@
     "name": "vcs.xml",
     "path": ".idea/.idea.comrade/.idea/vcs.xml",
     "sha": "94a25f7f4cb416c083d265558da75d457237d671",
+    "content": null,
+    "encodedContent": null,
+    "lines": 6,
     "size": 180,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.idea/.idea.comrade/.idea/vcs.xml?ref=master",
     "type": {
@@ -113,6 +143,9 @@
     "name": "applicationhost.config",
     "path": ".idea/config/applicationhost.config",
     "sha": "6aa40aa27d2d8563e7053494ae7ba4a8a1d4d956",
+    "content": null,
+    "encodedContent": null,
+    "lines": 984,
     "size": 77649,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.idea/config/applicationhost.config?ref=master",
     "type": {
@@ -124,6 +157,9 @@
     "name": "launch.json",
     "path": ".vscode/launch.json",
     "sha": "0a0eef6e09e2b09b4ac862db31f811caf3d59dbe",
+    "content": null,
+    "encodedContent": null,
+    "lines": 94,
     "size": 3388,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.vscode/launch.json?ref=master",
     "type": {
@@ -135,6 +171,9 @@
     "name": "tasks.json",
     "path": ".vscode/tasks.json",
     "sha": "62408ffb76d9eb329aa899fdb07f77a3f37be0f6",
+    "content": null,
+    "encodedContent": null,
+    "lines": 56,
     "size": 1654,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/.vscode/tasks.json?ref=master",
     "type": {
@@ -146,6 +185,9 @@
     "name": ".editorconfig",
     "path": "src/.editorconfig",
     "sha": "de62637adab81c3ee28eb9df1438ceee5ad22935",
+    "content": null,
+    "encodedContent": null,
+    "lines": 5,
     "size": 135,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/.editorconfig?ref=master",
     "type": {
@@ -157,6 +199,9 @@
     "name": "GitScraping.Application.csproj",
     "path": "src/GitScraping.Application/GitScraping.Application.csproj",
     "sha": "ed5f490b9db60e8f32b7961dc3ac7bfbd2bd9a37",
+    "content": null,
+    "encodedContent": null,
+    "lines": 31,
     "size": 995,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/GitScraping.Application.csproj?ref=master",
     "type": {
@@ -168,6 +213,9 @@
     "name": "AutoMapperConfig.cs",
     "path": "src/GitScraping.Application/AutoMapper/AutoMapperConfig.cs",
     "sha": "d94da1cc04b85153327a2362ba102ff3bde2569a",
+    "content": null,
+    "encodedContent": null,
+    "lines": 22,
     "size": 517,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/AutoMapper/AutoMapperConfig.cs?ref=master",
     "type": {
@@ -178,8 +226,11 @@
   {
     "name": "DomainToDtoMappingProfile.cs",
     "path": "src/GitScraping.Application/AutoMapper/DomainToDtoMappingProfile.cs",
-    "sha": "c7c0110cf1bedec5e51f965c3b758598fb796238",
-    "size": 553,
+    "sha": "028637701dfadbc975adc5ff964084f84eaab125",
+    "content": null,
+    "encodedContent": null,
+    "lines": 23,
+    "size": 516,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/AutoMapper/DomainToDtoMappingProfile.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -189,8 +240,11 @@
   {
     "name": "DtoToDomainMappingProfile.cs",
     "path": "src/GitScraping.Application/AutoMapper/DtoToDomainMappingProfile.cs",
-    "sha": "e66ff6b1699d6aa4afe2189d0942e026f0ce47ec",
-    "size": 392,
+    "sha": "5f384a2f9c0954f46fb17c1b6d3e173e9226551c",
+    "content": null,
+    "encodedContent": null,
+    "lines": 19,
+    "size": 390,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/AutoMapper/DtoToDomainMappingProfile.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -201,6 +255,9 @@
     "name": "Dto.cs",
     "path": "src/GitScraping.Application/Bases/Dto.cs",
     "sha": "bd271a8b94fff4ddf816ba2d31d1d10931c9f36b",
+    "content": null,
+    "encodedContent": null,
+    "lines": 6,
     "size": 79,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Bases/Dto.cs?ref=master",
     "type": {
@@ -212,6 +269,9 @@
     "name": "DtoValidation.cs",
     "path": "src/GitScraping.Application/Bases/DtoValidation.cs",
     "sha": "63147aebfd7360f2d59cbab54bf1a4b7944a1c33",
+    "content": null,
+    "encodedContent": null,
+    "lines": 17,
     "size": 507,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Bases/DtoValidation.cs?ref=master",
     "type": {
@@ -223,6 +283,9 @@
     "name": "EntityDto.cs",
     "path": "src/GitScraping.Application/Bases/EntityDto.cs",
     "sha": "9fae6e9ad2185d0200174420e0121f47289103e2",
+    "content": null,
+    "encodedContent": null,
+    "lines": 12,
     "size": 162,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Bases/EntityDto.cs?ref=master",
     "type": {
@@ -233,8 +296,11 @@
   {
     "name": "ListResultDto.cs",
     "path": "src/GitScraping.Application/Bases/ListResultDto.cs",
-    "sha": "246a4e1ec32864bf61f8a783a792068fbbc651d5",
-    "size": 1121,
+    "sha": "532760b871b7c15d17c369cbd159b0ca09e729ee",
+    "content": null,
+    "encodedContent": null,
+    "lines": 34,
+    "size": 765,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Bases/ListResultDto.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -244,8 +310,11 @@
   {
     "name": "PageResultDto.cs",
     "path": "src/GitScraping.Application/Bases/PageResultDto.cs",
-    "sha": "2d9304eb6518d454254b6d51a68140896321b266",
-    "size": 1644,
+    "sha": "0b8a1df1b90fef931bfc7cc349c6478fba61c0b1",
+    "content": null,
+    "encodedContent": null,
+    "lines": 45,
+    "size": 1432,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Bases/PageResultDto.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -255,8 +324,11 @@
   {
     "name": "ResultDto.cs",
     "path": "src/GitScraping.Application/Bases/ResultDto.cs",
-    "sha": "729fba88b78d1796fbaaf128f51f1e4696e03843",
-    "size": 371,
+    "sha": "b6b940035ce1e7d99f665cefbfafe2947dfa221c",
+    "content": null,
+    "encodedContent": null,
+    "lines": 15,
+    "size": 273,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Bases/ResultDto.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -267,6 +339,9 @@
     "name": "ServiceApp.cs",
     "path": "src/GitScraping.Application/Bases/ServiceApp.cs",
     "sha": "51f9267ec3f93b65ce25004fb8adf8761699a6a8",
+    "content": null,
+    "encodedContent": null,
+    "lines": 19,
     "size": 308,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Bases/ServiceApp.cs?ref=master",
     "type": {
@@ -277,8 +352,11 @@
   {
     "name": "SingleResultDto.cs",
     "path": "src/GitScraping.Application/Bases/SingleResultDto.cs",
-    "sha": "978c16aac7e481c279df512005826764f69f3c63",
-    "size": 2318,
+    "sha": "e33783f6d6a47143f2574376faef2a4e4e3ab220",
+    "content": null,
+    "encodedContent": null,
+    "lines": 69,
+    "size": 1738,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Bases/SingleResultDto.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -289,6 +367,9 @@
     "name": "AirplaneDto.cs",
     "path": "src/GitScraping.Application/Dtos/AirplaneDtos/AirplaneDto.cs",
     "sha": "045362586c510d31b7481d5a1942696bfe0741d5",
+    "content": null,
+    "encodedContent": null,
+    "lines": 22,
     "size": 531,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Dtos/AirplaneDtos/AirplaneDto.cs?ref=master",
     "type": {
@@ -297,33 +378,14 @@
     }
   },
   {
-    "name": "AirplaneEditarDto.cs",
-    "path": "src/GitScraping.Application/Dtos/AirplaneDtos/AirplaneEditarDto.cs",
-    "sha": "bf8be599bffe925c37a13ce85d2c910a3f3f3bb2",
-    "size": 126,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Dtos/AirplaneDtos/AirplaneEditarDto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "AirplaneExcluirDto.cs",
-    "path": "src/GitScraping.Application/Dtos/AirplaneDtos/AirplaneExcluirDto.cs",
-    "sha": "c0a44a9cd3f9e76c8bc9376228abcbb18feb67c6",
-    "size": 120,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Dtos/AirplaneDtos/AirplaneExcluirDto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "AirplaneIncluirDto.cs",
-    "path": "src/GitScraping.Application/Dtos/AirplaneDtos/AirplaneIncluirDto.cs",
-    "sha": "424f2d9f94911cb55dacaa43bf2d7f410ebe8697",
-    "size": 120,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Dtos/AirplaneDtos/AirplaneIncluirDto.cs?ref=master",
+    "name": "HttpAirplaneDto.cs",
+    "path": "src/GitScraping.Application/Dtos/AirplaneDtos/HttpAirplaneDto.cs",
+    "sha": "a2620c1cad742d5b317993a6eda6c8350bd5d5ea",
+    "content": null,
+    "encodedContent": null,
+    "lines": 21,
+    "size": 477,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Dtos/AirplaneDtos/HttpAirplaneDto.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
@@ -333,6 +395,9 @@
     "name": "PaginationFilter.cs",
     "path": "src/GitScraping.Application/Filters/PaginationFilter.cs",
     "sha": "699d2c6976f0260eb647244e3238586b0c5850ce",
+    "content": null,
+    "encodedContent": null,
+    "lines": 8,
     "size": 180,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Filters/PaginationFilter.cs?ref=master",
     "type": {
@@ -344,6 +409,9 @@
     "name": "IAirplaneAppService.cs",
     "path": "src/GitScraping.Application/Interfaces/IAirplaneAppService.cs",
     "sha": "ac5ec077870eb5fb3c05aecadab11cfa4d29d3f4",
+    "content": null,
+    "encodedContent": null,
+    "lines": 17,
     "size": 423,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Interfaces/IAirplaneAppService.cs?ref=master",
     "type": {
@@ -355,6 +423,9 @@
     "name": "IHttpClientHelper.cs",
     "path": "src/GitScraping.Application/Interfaces/IHttpClientHelper.cs",
     "sha": "48a83400b9b8f938c5b79ec00c088e9ea46ef0cd",
+    "content": null,
+    "encodedContent": null,
+    "lines": 16,
     "size": 272,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Interfaces/IHttpClientHelper.cs?ref=master",
     "type": {
@@ -366,6 +437,9 @@
     "name": "RequestToDomainProfile.cs",
     "path": "src/GitScraping.Application/MappingProfiles/RequestToDomainProfile.cs",
     "sha": "665074b80ae6a9da63203dcf699f355672393ddc",
+    "content": null,
+    "encodedContent": null,
+    "lines": 18,
     "size": 356,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/MappingProfiles/RequestToDomainProfile.cs?ref=master",
     "type": {
@@ -377,6 +451,9 @@
     "name": "PaginationQuery.cs",
     "path": "src/GitScraping.Application/Queries/PaginationQuery.cs",
     "sha": "d8c0e5b524cca2251c1bae2590bfe7c1bf97cf5c",
+    "content": null,
+    "encodedContent": null,
+    "lines": 20,
     "size": 440,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Queries/PaginationQuery.cs?ref=master",
     "type": {
@@ -387,8 +464,11 @@
   {
     "name": "AirplaneAppService.cs",
     "path": "src/GitScraping.Application/Services/AirplaneAppService.cs",
-    "sha": "bf9e4751c4a3f1fb4ff77d5f0e533899f3bc6b9a",
-    "size": 2903,
+    "sha": "3c0950ff46b9cb3db6f4daefa48e2cad81a78de5",
+    "content": null,
+    "encodedContent": null,
+    "lines": 118,
+    "size": 3821,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Services/AirplaneAppService.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -398,8 +478,11 @@
   {
     "name": "HttpClientHelper.cs",
     "path": "src/GitScraping.Application/Services/HttpClientHelper.cs",
-    "sha": "04961e08503ca12ae87f600cb2e3131cb58f3cdb",
-    "size": 2612,
+    "sha": "e1cf1cf79b8ddfc756f75589021dffb6596171af",
+    "content": null,
+    "encodedContent": null,
+    "lines": 80,
+    "size": 2440,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Services/HttpClientHelper.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -410,6 +493,9 @@
     "name": "IAppService.cs",
     "path": "src/GitScraping.Application/Utils/IAppService.cs",
     "sha": "4dd1e96ac8ac8e58fc3b8a8ff47ed669c0f716c1",
+    "content": null,
+    "encodedContent": null,
+    "lines": 13,
     "size": 163,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Utils/IAppService.cs?ref=master",
     "type": {
@@ -421,6 +507,9 @@
     "name": "IEntityDto.cs",
     "path": "src/GitScraping.Application/Utils/IEntityDto.cs",
     "sha": "f85f20fe649a5625cdff37e178dad0f68ad7750a",
+    "content": null,
+    "encodedContent": null,
+    "lines": 6,
     "size": 90,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Utils/IEntityDto.cs?ref=master",
     "type": {
@@ -432,6 +521,9 @@
     "name": "IListResultDto.cs",
     "path": "src/GitScraping.Application/Utils/IListResultDto.cs",
     "sha": "3f61ba19a778c99ae076afeaee20d4d18ddbbc18",
+    "content": null,
+    "encodedContent": null,
+    "lines": 15,
     "size": 270,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Utils/IListResultDto.cs?ref=master",
     "type": {
@@ -443,6 +535,9 @@
     "name": "ILookupDto.cs",
     "path": "src/GitScraping.Application/Utils/ILookupDto.cs",
     "sha": "cadbe13d4fea4492d1f6684cc10243875e23cbb8",
+    "content": null,
+    "encodedContent": null,
+    "lines": 8,
     "size": 155,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Utils/ILookupDto.cs?ref=master",
     "type": {
@@ -454,6 +549,9 @@
     "name": "IPageResultDto.cs",
     "path": "src/GitScraping.Application/Utils/IPageResultDto.cs",
     "sha": "2884731d7391465bed70fda101e2bc8f766f75b5",
+    "content": null,
+    "encodedContent": null,
+    "lines": 15,
     "size": 270,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Utils/IPageResultDto.cs?ref=master",
     "type": {
@@ -464,8 +562,11 @@
   {
     "name": "IResultDto.cs",
     "path": "src/GitScraping.Application/Utils/IResultDto.cs",
-    "sha": "8f5a3bee7c1b306264831da90bef9a6140bce339",
-    "size": 245,
+    "sha": "9c6541ee002c43d9cf3114303562bcca038e29a0",
+    "content": null,
+    "encodedContent": null,
+    "lines": 13,
+    "size": 199,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Utils/IResultDto.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -476,6 +577,9 @@
     "name": "ISingleResultDto.cs",
     "path": "src/GitScraping.Application/Utils/ISingleResultDto.cs",
     "sha": "51af7c675a41b3103391a9a548dc0e0716fd5fb8",
+    "content": null,
+    "encodedContent": null,
+    "lines": 14,
     "size": 226,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Application/Utils/ISingleResultDto.cs?ref=master",
     "type": {
@@ -486,9 +590,26 @@
   {
     "name": "GitScraping.Core.csproj",
     "path": "src/GitScraping.Core/GitScraping.Core.csproj",
-    "sha": "0480bf12a0c890fc82b67a83a4dd608ea3ef1baf",
-    "size": 1170,
+    "sha": "4cdac69a3778688320564b14ff34bfc18ec768aa",
+    "content": null,
+    "encodedContent": null,
+    "lines": 39,
+    "size": 1221,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/GitScraping.Core.csproj?ref=master",
+    "type": {
+      "stringValue": "file",
+      "value": "file"
+    }
+  },
+  {
+    "name": "ProcessFilesUseCaseUsecase.cs",
+    "path": "src/GitScraping.Core/ExtractedFileCore/Usecase/ProcessFilesUseCaseUsecase.cs",
+    "sha": "ddb8117f2b8053a6e3535a996ab9ca104491355f",
+    "content": null,
+    "encodedContent": null,
+    "lines": 35,
+    "size": 829,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/ExtractedFileCore/Usecase/ProcessFilesUseCaseUsecase.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
@@ -498,6 +619,9 @@
     "name": "HorariosFusoExtensions.cs",
     "path": "src/GitScraping.Core/Helpers/Extensions/HorariosFusoExtensions.cs",
     "sha": "c7589b92f9763332d22bf73ec8959e92ed3d8329",
+    "content": null,
+    "encodedContent": null,
+    "lines": 20,
     "size": 477,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Extensions/HorariosFusoExtensions.cs?ref=master",
     "type": {
@@ -509,6 +633,9 @@
     "name": "IPasswordHasher.cs",
     "path": "src/GitScraping.Core/Helpers/Extensions/IPasswordHasher.cs",
     "sha": "2a67cfc6831fd2c57d5cc025ce0be4d59adee994",
+    "content": null,
+    "encodedContent": null,
+    "lines": 9,
     "size": 220,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Extensions/IPasswordHasher.cs?ref=master",
     "type": {
@@ -520,6 +647,9 @@
     "name": "IntegrationExtensions.cs",
     "path": "src/GitScraping.Core/Helpers/Extensions/IntegrationExtensions.cs",
     "sha": "6b767612b9c96cd03d85e6744cd4ad7d0b7edcf7",
+    "content": null,
+    "encodedContent": null,
+    "lines": 56,
     "size": 1510,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Extensions/IntegrationExtensions.cs?ref=master",
     "type": {
@@ -531,6 +661,9 @@
     "name": "PasswordHasher.cs",
     "path": "src/GitScraping.Core/Helpers/Extensions/PasswordHasher.cs",
     "sha": "0a129ca8333aefdbdb845672b870d9e202a0e468",
+    "content": null,
+    "encodedContent": null,
+    "lines": 69,
     "size": 2007,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Extensions/PasswordHasher.cs?ref=master",
     "type": {
@@ -542,6 +675,9 @@
     "name": "StringExtensions.cs",
     "path": "src/GitScraping.Core/Helpers/Extensions/StringExtensions.cs",
     "sha": "0ee089395fef73ecb904ed2e4d6299e90cdd8689",
+    "content": null,
+    "encodedContent": null,
+    "lines": 27,
     "size": 671,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Extensions/StringExtensions.cs?ref=master",
     "type": {
@@ -553,6 +689,9 @@
     "name": "IEntityValidation.cs",
     "path": "src/GitScraping.Core/Helpers/Interfaces/IEntityValidation.cs",
     "sha": "96361f3b1b89d4ffc5a3069bf3f0bfa3f6e6a672",
+    "content": null,
+    "encodedContent": null,
+    "lines": 17,
     "size": 405,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Interfaces/IEntityValidation.cs?ref=master",
     "type": {
@@ -563,8 +702,11 @@
   {
     "name": "IResult.cs",
     "path": "src/GitScraping.Core/Helpers/Interfaces/IResult.cs",
-    "sha": "f3741b8a126ef5cb3a2bfd3d9f32c485256c56ef",
-    "size": 199,
+    "sha": "60d73d8856938c29c1f02f005a144410f2e86b04",
+    "content": null,
+    "encodedContent": null,
+    "lines": 8,
+    "size": 161,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Interfaces/IResult.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -575,6 +717,9 @@
     "name": "IService.cs",
     "path": "src/GitScraping.Core/Helpers/Interfaces/IService.cs",
     "sha": "bd1717f01baad9ed8feae237214735749d316ad1",
+    "content": null,
+    "encodedContent": null,
+    "lines": 13,
     "size": 175,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Interfaces/IService.cs?ref=master",
     "type": {
@@ -586,6 +731,9 @@
     "name": "ISingleResult.cs",
     "path": "src/GitScraping.Core/Helpers/Interfaces/ISingleResult.cs",
     "sha": "6e410e41e6859f0b498f5d20a91f2e83f2b2c1c8",
+    "content": null,
+    "encodedContent": null,
+    "lines": 14,
     "size": 244,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Interfaces/ISingleResult.cs?ref=master",
     "type": {
@@ -594,22 +742,28 @@
     }
   },
   {
-    "name": "MensagensNegocio.Designer.cs",
-    "path": "src/GitScraping.Core/Helpers/Messages/MensagensNegocio.Designer.cs",
-    "sha": "35c7c4db9dace9d85fb78073211749ea9cc3d426",
-    "size": 6269,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Messages/MensagensNegocio.Designer.cs?ref=master",
+    "name": "BusinessMessage.Designer.cs",
+    "path": "src/GitScraping.Core/Helpers/Messages/BusinessMessage.Designer.cs",
+    "sha": "a9617f9dff5adb59a1e946dfc0ae5217d744732d",
+    "content": null,
+    "encodedContent": null,
+    "lines": 73,
+    "size": 3099,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Messages/BusinessMessage.Designer.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
     }
   },
   {
-    "name": "MensagensNegocio.resx",
-    "path": "src/GitScraping.Core/Helpers/Messages/MensagensNegocio.resx",
-    "sha": "7e0e02031bd5da1a65d48db0e41ea88a0c5d2ddc",
-    "size": 7027,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Messages/MensagensNegocio.resx?ref=master",
+    "name": "BusinessMessage.resx",
+    "path": "src/GitScraping.Core/Helpers/Messages/BusinessMessage.resx",
+    "sha": "41946c970f7a10f046849d1bbe4340a2899bab4d",
+    "content": null,
+    "encodedContent": null,
+    "lines": 123,
+    "size": 5777,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Messages/BusinessMessage.resx?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
@@ -619,6 +773,9 @@
     "name": "HashingOptions.cs",
     "path": "src/GitScraping.Core/Helpers/Models/HashingOptions.cs",
     "sha": "653d40403b526716048cff01912944de64f28bf0",
+    "content": null,
+    "encodedContent": null,
+    "lines": 18,
     "size": 318,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Models/HashingOptions.cs?ref=master",
     "type": {
@@ -630,6 +787,9 @@
     "name": "ErrorDto.cs",
     "path": "src/GitScraping.Core/Helpers/Models/Dtos/ErrorDto.cs",
     "sha": "5226283213f89677fc56b491507e5d1665526e59",
+    "content": null,
+    "encodedContent": null,
+    "lines": 9,
     "size": 206,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Models/Dtos/ErrorDto.cs?ref=master",
     "type": {
@@ -638,66 +798,14 @@
     }
   },
   {
-    "name": "EditarResult.cs",
-    "path": "src/GitScraping.Core/Helpers/Models/Results/EditarResult.cs",
-    "sha": "fdfa6d844a7e1c283626b31e2c341f523bb13476",
-    "size": 941,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Models/Results/EditarResult.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "ExcluirResult.cs",
-    "path": "src/GitScraping.Core/Helpers/Models/Results/ExcluirResult.cs",
-    "sha": "bb2090a91da683436416b25bb4c74f081eda6f1a",
-    "size": 945,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Models/Results/ExcluirResult.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "IncluirResult.cs",
-    "path": "src/GitScraping.Core/Helpers/Models/Results/IncluirResult.cs",
-    "sha": "3245c9dce62f517bbdb446a05315be09df22e92e",
-    "size": 982,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Models/Results/IncluirResult.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
     "name": "SingleResult.cs",
     "path": "src/GitScraping.Core/Helpers/Models/Results/SingleResult.cs",
-    "sha": "0f34b3969d0ef9dca2e933358651bc1191bfdb19",
-    "size": 1895,
+    "sha": "a9f08189afc1a1a3b50053042e70b67b57ade02b",
+    "content": null,
+    "encodedContent": null,
+    "lines": 65,
+    "size": 1713,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Helpers/Models/Results/SingleResult.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "SecurityResult.cs",
-    "path": "src/GitScraping.Core/Utils/SecurityResult.cs",
-    "sha": "609595d6243dbdeebcecfeca7fb4810913fa41d4",
-    "size": 684,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Utils/SecurityResult.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "User.cs",
-    "path": "src/GitScraping.Core/Utils/User.cs",
-    "sha": "1ed4051816b9dc38781ac0638524182d14537110",
-    "size": 308,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/Utils/User.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
@@ -707,6 +815,9 @@
     "name": "DomainException.cs",
     "path": "src/GitScraping.Domain/DomainException.cs",
     "sha": "f9437b9cf30d6dd386ac2f975de6088624d4feb7",
+    "content": null,
+    "encodedContent": null,
+    "lines": 41,
     "size": 1071,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/DomainException.cs?ref=master",
     "type": {
@@ -717,8 +828,11 @@
   {
     "name": "GitScraping.Domain.csproj",
     "path": "src/GitScraping.Domain/GitScraping.Domain.csproj",
-    "sha": "2f002aa338c556c5b1b7d2eb597b1d7f5394a1aa",
-    "size": 133,
+    "sha": "5bf3a24e9f33bd8dc63d5c64090b4902098fc850",
+    "content": null,
+    "encodedContent": null,
+    "lines": 22,
+    "size": 478,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/GitScraping.Domain.csproj?ref=master",
     "type": {
       "stringValue": "file",
@@ -729,6 +843,9 @@
     "name": "EntityAttribute.cs",
     "path": "src/GitScraping.Domain/Attributes/EntityAttribute.cs",
     "sha": "cbaef1b4698914aa9c2f2259ffb2fd7b0e46dc52",
+    "content": null,
+    "encodedContent": null,
+    "lines": 19,
     "size": 336,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Attributes/EntityAttribute.cs?ref=master",
     "type": {
@@ -739,8 +856,11 @@
   {
     "name": "Entity.cs",
     "path": "src/GitScraping.Domain/Bases/Entity.cs",
-    "sha": "98b9cca94c29566b2c09586de633ab6ddb1dc992",
-    "size": 1335,
+    "sha": "cb4a576fd693cdc23205e2903184a899840d6e66",
+    "content": null,
+    "encodedContent": null,
+    "lines": 19,
+    "size": 334,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Bases/Entity.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -751,6 +871,9 @@
     "name": "ValueObject.cs",
     "path": "src/GitScraping.Domain/Bases/ValueObject.cs",
     "sha": "c565e5d9435a531474174e324d9f28362b240793",
+    "content": null,
+    "encodedContent": null,
+    "lines": 36,
     "size": 971,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Bases/ValueObject.cs?ref=master",
     "type": {
@@ -762,6 +885,9 @@
     "name": "EnumExtensions.cs",
     "path": "src/GitScraping.Domain/Enums/EnumExtensions.cs",
     "sha": "5188fb5f00a8d0bfd50654b58c98b912d3c4ac01",
+    "content": null,
+    "encodedContent": null,
+    "lines": 22,
     "size": 562,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Enums/EnumExtensions.cs?ref=master",
     "type": {
@@ -773,6 +899,9 @@
     "name": "EnumResultadoAcao.cs",
     "path": "src/GitScraping.Domain/Enums/EnumResultadoAcao.cs",
     "sha": "d82b856fe68cc346cb3f140bda11f3ff4b616efa",
+    "content": null,
+    "encodedContent": null,
+    "lines": 10,
     "size": 206,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Enums/EnumResultadoAcao.cs?ref=master",
     "type": {
@@ -784,6 +913,9 @@
     "name": "IEntity.cs",
     "path": "src/GitScraping.Domain/Interfaces/IEntity.cs",
     "sha": "4c02d6a000d79ea78d6373f0f9b760a25340c39e",
+    "content": null,
+    "encodedContent": null,
+    "lines": 9,
     "size": 166,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Interfaces/IEntity.cs?ref=master",
     "type": {
@@ -792,176 +924,42 @@
     }
   },
   {
-    "name": "Airplane.cs",
-    "path": "src/GitScraping.Domain/Models/Airplane.cs",
-    "sha": "9829b2950c3dbf7536879f9dc36fe9d54c8abd70",
-    "size": 1050,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Models/Airplane.cs?ref=master",
+    "name": "ExtractedFile - Copy.cs",
+    "path": "src/GitScraping.Domain/Models/ExtractedFile - Copy.cs",
+    "sha": "478afd54e9b71f255e3355f70a499bbeb7599bf1",
+    "content": null,
+    "encodedContent": null,
+    "lines": 17,
+    "size": 332,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Models/ExtractedFile%20-%20Copy.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
     }
   },
   {
-    "name": "GitScraping.External.csproj",
-    "path": "src/GitScraping.External/GitScraping.External.csproj",
-    "sha": "5b9b3e3ecbdc3fe2a34f51fbd5f016cdcdaa11d4",
-    "size": 422,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/GitScraping.External.csproj?ref=master",
+    "name": "ExtractedFile.cs",
+    "path": "src/GitScraping.Domain/Models/ExtractedFile.cs",
+    "sha": "0ab10f5c007f3078fba96b1a12cfcb9e13bba8cf",
+    "content": null,
+    "encodedContent": null,
+    "lines": 19,
+    "size": 421,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Models/ExtractedFile.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
     }
   },
   {
-    "name": "Dto.cs",
-    "path": "src/GitScraping.External/Bases/Dto.cs",
-    "sha": "732e1408663a61c0d849be538e3855938f75d0ca",
-    "size": 76,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Bases/Dto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "EntityDto.cs",
-    "path": "src/GitScraping.External/Bases/EntityDto.cs",
-    "sha": "ea76a3915f9f0fcc343f9f061dca057b5481eddf",
-    "size": 192,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Bases/EntityDto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "ListResultDto.cs",
-    "path": "src/GitScraping.External/Bases/ListResultDto.cs",
-    "sha": "053f444d65f390966115902fd45e07200e0b7f52",
-    "size": 576,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Bases/ListResultDto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "ResultDto.cs",
-    "path": "src/GitScraping.External/Bases/ResultDto.cs",
-    "sha": "6c35fecdbc44244b6fa65f30e90d1738dd4f5873",
-    "size": 352,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Bases/ResultDto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "SingleResultDto.cs",
-    "path": "src/GitScraping.External/Bases/SingleResultDto.cs",
-    "sha": "cb414cc0f1db63639f5a09662b79e20591637a6f",
-    "size": 1504,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Bases/SingleResultDto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "IAirplaneExternalService.cs",
-    "path": "src/GitScraping.External/Interfaces/IAirplaneExternalService.cs",
-    "sha": "83fd41e2705b98e39aaf6c646839b827afe7beba",
-    "size": 173,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Interfaces/IAirplaneExternalService.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "AirplaneExternalService.cs",
-    "path": "src/GitScraping.External/Services/AirplaneExternalService.cs",
-    "sha": "036267ce3e51f2c00fa45dc51366048d806c01e9",
-    "size": 1561,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Services/AirplaneExternalService.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "IEntityDto.cs",
-    "path": "src/GitScraping.External/Utils/IEntityDto.cs",
-    "sha": "85a360365a4cb0a71afa11f332477836259bf8c3",
-    "size": 87,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Utils/IEntityDto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "IListResultDto.cs",
-    "path": "src/GitScraping.External/Utils/IListResultDto.cs",
-    "sha": "04c534a165e30592b837d11790db99c450e97414",
-    "size": 220,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Utils/IListResultDto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "ISingleResultDto.cs",
-    "path": "src/GitScraping.External/Utils/ISingleResultDto.cs",
-    "sha": "0e2468b582fd6e9a6eb7c083cecdfbb304c79046",
-    "size": 207,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.External/Utils/ISingleResultDto.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "GitScraping.Infrastructure.csproj",
-    "path": "src/GitScraping.Infrastructure/GitScraping.Infrastructure.csproj",
-    "sha": "cb9aad76cebbeb6c8a24a74e24cf8aaaa7306e8f",
-    "size": 2397,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/GitScraping.Infrastructure.csproj?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "Repository.cs",
-    "path": "src/GitScraping.Infrastructure/Bases/Repository.cs",
-    "sha": "4b36bad18d24d99fc989fc4e0ca09c8197b95a88",
-    "size": 5532,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Bases/Repository.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "GitScrapingContext.cs",
-    "path": "src/GitScraping.Infrastructure/DataAccess/GitScrapingContext.cs",
-    "sha": "3444d0a564d58f8dbe23db9039c95ca8952b6331",
-    "size": 1226,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/DataAccess/GitScrapingContext.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "UnitOfWork.cs",
-    "path": "src/GitScraping.Infrastructure/DataAccess/UnitOfWork.cs",
-    "sha": "12b69e21df3a542e451dfbaf47222f459b2ff8fe",
-    "size": 1051,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/DataAccess/UnitOfWork.cs?ref=master",
+    "name": "scrappingFile.json",
+    "path": "src/GitScraping.Domain/SeedData/scrappingFile.json",
+    "sha": "ca211ffbf78798251e7c238470f27ab84f5c90db",
+    "content": null,
+    "encodedContent": null,
+    "lines": 1598,
+    "size": 57064,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/SeedData/scrappingFile.json?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
@@ -969,186 +967,41 @@
   },
   {
     "name": "JsonUtilities.cs",
-    "path": "src/GitScraping.Infrastructure/Extensions/JsonUtilities.cs",
-    "sha": "d2f1719d3d43f84dd8d8d0aeed2504a9c1acf7fe",
-    "size": 599,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Extensions/JsonUtilities.cs?ref=master",
+    "path": "src/GitScraping.Domain/Utils/JsonUtilities.cs",
+    "sha": "8fa6c005e34a623024c51193667dedc264a6030a",
+    "content": null,
+    "encodedContent": null,
+    "lines": 31,
+    "size": 811,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Utils/JsonUtilities.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
     }
   },
   {
-    "name": "QueryalbleExtensions.cs",
-    "path": "src/GitScraping.Infrastructure/Extensions/QueryalbleExtensions.cs",
-    "sha": "2d9c419cc443a8a49c411b668004d98189b2433b",
-    "size": 1013,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Extensions/QueryalbleExtensions.cs?ref=master",
+    "name": "SecurityResult.cs",
+    "path": "src/GitScraping.Domain/Utils/SecurityResult.cs",
+    "sha": "fb223b181fd14ab00c755bf9d45678489e0346c6",
+    "content": null,
+    "encodedContent": null,
+    "lines": 31,
+    "size": 686,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Utils/SecurityResult.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
     }
   },
   {
-    "name": "AirplaneConfiguration.cs",
-    "path": "src/GitScraping.Infrastructure/Mappings/AirplaneConfiguration.cs",
-    "sha": "6084c965b1d20276f3191ee9bd5f0641ef37d9df",
-    "size": 596,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Mappings/AirplaneConfiguration.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "UsuarioSistemaConfiguration.cs",
-    "path": "src/GitScraping.Infrastructure/Mappings/UsuarioSistemaConfiguration.cs",
-    "sha": "bf13ef2953ceac2517046e8c47562a210c5ee9c9",
-    "size": 730,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Mappings/UsuarioSistemaConfiguration.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "VwUsuarioSistemaPermissaoConfiguration.cs",
-    "path": "src/GitScraping.Infrastructure/Mappings/Views/VwUsuarioSistemaPermissaoConfiguration.cs",
-    "sha": "6de5db42366054cc20829b655068b01e4aab2bcc",
-    "size": 607,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Mappings/Views/VwUsuarioSistemaPermissaoConfiguration.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "20210409032938_incial.Designer.cs",
-    "path": "src/GitScraping.Infrastructure/Migrations/20210409032938_incial.Designer.cs",
-    "sha": "08d5136232f08aeb96174ff164f52b36614867f4",
-    "size": 5032,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Migrations/20210409032938_incial.Designer.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "20210409032938_incial.cs",
-    "path": "src/GitScraping.Infrastructure/Migrations/20210409032938_incial.cs",
-    "sha": "e4accb571919acd7a1fd8aa99e440937bd58d158",
-    "size": 3196,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Migrations/20210409032938_incial.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "20210409032938_incial_Up.sql",
-    "path": "src/GitScraping.Infrastructure/Migrations/20210409032938_incial_Up.sql",
-    "sha": "e04343f4356f4c4332e04caed62642cb05f014e9",
-    "size": 1594,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Migrations/20210409032938_incial_Up.sql?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "KpmgContextModelSnapshot.cs",
-    "path": "src/GitScraping.Infrastructure/Migrations/KpmgContextModelSnapshot.cs",
-    "sha": "b92dcd7e0d43d657fabbcb96423f38e34e62587d",
-    "size": 4656,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Migrations/KpmgContextModelSnapshot.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "AirplaneRepository.cs",
-    "path": "src/GitScraping.Infrastructure/Repositories/AirplaneRepository.cs",
-    "sha": "48a6b22f2671131ca47d246911aae535b4b332e5",
-    "size": 1198,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Repositories/AirplaneRepository.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "UsuarioSistemaRepository.cs",
-    "path": "src/GitScraping.Infrastructure/Repositories/UsuarioSistemaRepository.cs",
-    "sha": "51ca36fb267885cbc3e34672d4f3c95ba08ae59e",
-    "size": 1067,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Repositories/UsuarioSistemaRepository.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "VwUsuarioSistemaPermissaoRepository.cs",
-    "path": "src/GitScraping.Infrastructure/Repositories/Views/VwUsuarioSistemaPermissaoRepository.cs",
-    "sha": "d328022eadfb3d28120a08fbd188291baed3a3a2",
-    "size": 920,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/Repositories/Views/VwUsuarioSistemaPermissaoRepository.cs?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "Airplane.json",
-    "path": "src/GitScraping.Infrastructure/SeedData/Airplane.json",
-    "sha": "357eeed0e8a915bd587a41a737541731f7b4830c",
-    "size": 389,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/SeedData/Airplane.json?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "Autenticacao.json",
-    "path": "src/GitScraping.Infrastructure/SeedData/Autenticacao.json",
-    "sha": "720199875260e802c673c085eac0f5da0f747d41",
-    "size": 54,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/SeedData/Autenticacao.json?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "usuarioSistema.json",
-    "path": "src/GitScraping.Infrastructure/SeedData/usuarioSistema.json",
-    "sha": "5cca099d94ed421963ebc5fecf5041ea45b55814",
-    "size": 982,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/SeedData/usuarioSistema.json?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "basicSheet.xlsx",
-    "path": "src/GitScraping.Infrastructure/SeedData/Sheets/basicSheet.xlsx",
-    "sha": "78595fe36d7acc3ea4942d1a92c3c15b4531b6df",
-    "size": 19099,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Infrastructure/SeedData/Sheets/basicSheet.xlsx?ref=master",
-    "type": {
-      "stringValue": "file",
-      "value": "file"
-    }
-  },
-  {
-    "name": "Dockerfile",
-    "path": "src/GitScraping.WebApi/Dockerfile",
-    "sha": "56fa52e2b6d962667f00bf264776f9a6cf64ea76",
-    "size": 937,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Dockerfile?ref=master",
+    "name": "User.cs",
+    "path": "src/GitScraping.Domain/Utils/User.cs",
+    "sha": "829c41776e1e6ae18abc6ba6cbbff9c6073ed5a7",
+    "content": null,
+    "encodedContent": null,
+    "lines": 16,
+    "size": 310,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Domain/Utils/User.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
@@ -1158,6 +1011,9 @@
     "name": "GitScraping.WebApi.csproj",
     "path": "src/GitScraping.WebApi/GitScraping.WebApi.csproj",
     "sha": "8715e95f3a7fc352e6975d5cf2e3eb8d65ccc746",
+    "content": null,
+    "encodedContent": null,
+    "lines": 107,
     "size": 5379,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/GitScraping.WebApi.csproj?ref=master",
     "type": {
@@ -1169,6 +1025,9 @@
     "name": "Program.cs",
     "path": "src/GitScraping.WebApi/Program.cs",
     "sha": "8e1733fa992380bd662b32db15ea615238be5ebe",
+    "content": null,
+    "encodedContent": null,
+    "lines": 61,
     "size": 1690,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Program.cs?ref=master",
     "type": {
@@ -1179,8 +1038,11 @@
   {
     "name": "Startup.cs",
     "path": "src/GitScraping.WebApi/Startup.cs",
-    "sha": "23d79a28ff0d0a772ac53c84274b43c4e7250c02",
-    "size": 2922,
+    "sha": "2787e61c2d3defa4db40f8b89f51635a1c1a3e6b",
+    "content": null,
+    "encodedContent": null,
+    "lines": 93,
+    "size": 2792,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Startup.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -1191,6 +1053,9 @@
     "name": "appsettings.Development.json",
     "path": "src/GitScraping.WebApi/appsettings.Development.json",
     "sha": "a9c87bbeaa2b5a9eb27dc31c081ab153f9f35f35",
+    "content": null,
+    "encodedContent": null,
+    "lines": 25,
     "size": 630,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/appsettings.Development.json?ref=master",
     "type": {
@@ -1202,6 +1067,9 @@
     "name": "appsettings.Production.json",
     "path": "src/GitScraping.WebApi/appsettings.Production.json",
     "sha": "7cfc7eb58b78f2f87b9fa0cc0b4fe42f0e9725a4",
+    "content": null,
+    "encodedContent": null,
+    "lines": 25,
     "size": 620,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/appsettings.Production.json?ref=master",
     "type": {
@@ -1212,8 +1080,11 @@
   {
     "name": "appsettings.json",
     "path": "src/GitScraping.WebApi/appsettings.json",
-    "sha": "62bf51e2f0a3f2ca8c4fcbd6e15e27d246c84071",
-    "size": 1122,
+    "sha": "9306a8092ef202e5408cc4153f67cb5170cbd162",
+    "content": null,
+    "encodedContent": null,
+    "lines": 53,
+    "size": 1154,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/appsettings.json?ref=master",
     "type": {
       "stringValue": "file",
@@ -1224,6 +1095,9 @@
     "name": "entrypoint.sh",
     "path": "src/GitScraping.WebApi/entrypoint.sh",
     "sha": "76d15826b2c261be95bcbd8fd528537a08bdd18d",
+    "content": null,
+    "encodedContent": null,
+    "lines": 5,
     "size": 124,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/entrypoint.sh?ref=master",
     "type": {
@@ -1235,6 +1109,9 @@
     "name": "ComradeController.cs",
     "path": "src/GitScraping.WebApi/Bases/ComradeController.cs",
     "sha": "888de5ef7be6c2f8b9696e305ea6cb00e015dd71",
+    "content": null,
+    "encodedContent": null,
+    "lines": 19,
     "size": 369,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Bases/ComradeController.cs?ref=master",
     "type": {
@@ -1245,8 +1122,11 @@
   {
     "name": "AirplaneController.cs",
     "path": "src/GitScraping.WebApi/Controllers/V1/AirplaneApi/AirplaneController.cs",
-    "sha": "191de0461c19814b6ed1e9edeecc06edd9870a3a",
-    "size": 1895,
+    "sha": "3aa5e7b8ff79baaad66a88551f83fd31fcda1882",
+    "content": null,
+    "encodedContent": null,
+    "lines": 61,
+    "size": 1929,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Controllers/V1/AirplaneApi/AirplaneController.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -1257,6 +1137,9 @@
     "name": "ApplicationDetailsEnricher.cs",
     "path": "src/GitScraping.WebApi/Modules/ApplicationDetailsEnricher.cs",
     "sha": "615bf851bdc523a31a8a46badb83979bc12857d1",
+    "content": null,
+    "encodedContent": null,
+    "lines": 24,
     "size": 715,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/ApplicationDetailsEnricher.cs?ref=master",
     "type": {
@@ -1268,6 +1151,9 @@
     "name": "AutoMapperSetup.cs",
     "path": "src/GitScraping.WebApi/Modules/AutoMapperSetup.cs",
     "sha": "58e382654f1652475073c2bc99126d632202c889",
+    "content": null,
+    "encodedContent": null,
+    "lines": 20,
     "size": 513,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/AutoMapperSetup.cs?ref=master",
     "type": {
@@ -1279,6 +1165,9 @@
     "name": "HealthChecksExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/HealthChecksExtensions.cs",
     "sha": "303bc085aa85b469ba2ca5d35eeda49985c18b56",
+    "content": null,
+    "encodedContent": null,
+    "lines": 102,
     "size": 3287,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/HealthChecksExtensions.cs?ref=master",
     "type": {
@@ -1290,6 +1179,9 @@
     "name": "UseCasesExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/UseCasesExtensions.cs",
     "sha": "7843ece004a406b2081225639577b7ac3f1a9ae7",
+    "content": null,
+    "encodedContent": null,
+    "lines": 36,
     "size": 928,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/UseCasesExtensions.cs?ref=master",
     "type": {
@@ -1300,8 +1192,11 @@
   {
     "name": "AuthenticationExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/AuthenticationExtensions.cs",
-    "sha": "d3c1631defb5b6f51ad146d128a27c6d7b7822f9",
-    "size": 1983,
+    "sha": "490bd677fbe0030c52fe718a4b41219d04715b79",
+    "content": null,
+    "encodedContent": null,
+    "lines": 40,
+    "size": 1148,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/AuthenticationExtensions.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -1312,6 +1207,9 @@
     "name": "CustomApiConventions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/CustomApiConventions.cs",
     "sha": "b4e021b93ccaa7d6645cf3cedf2e68629184f675",
+    "content": null,
+    "encodedContent": null,
+    "lines": 140,
     "size": 5026,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/CustomApiConventions.cs?ref=master",
     "type": {
@@ -1323,6 +1221,9 @@
     "name": "CustomControllersExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/CustomControllersExtensions.cs",
     "sha": "68a05920f2ee05792ee3beda64346ca35692ed1d",
+    "content": null,
+    "encodedContent": null,
+    "lines": 56,
     "size": 1994,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/CustomControllersExtensions.cs?ref=master",
     "type": {
@@ -1334,6 +1235,9 @@
     "name": "CustomCorsExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/CustomCorsExtensions.cs",
     "sha": "acbb5f946d6feb7a530dc919d09cb2daf1c732e2",
+    "content": null,
+    "encodedContent": null,
+    "lines": 47,
     "size": 1144,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/CustomCorsExtensions.cs?ref=master",
     "type": {
@@ -1345,6 +1249,9 @@
     "name": "ExceptionFilter.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/ExceptionFilter.cs",
     "sha": "9b3fd043352c82cab6f064e3ecac480d0b165e6f",
+    "content": null,
+    "encodedContent": null,
+    "lines": 26,
     "size": 658,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/ExceptionFilter.cs?ref=master",
     "type": {
@@ -1356,6 +1263,9 @@
     "name": "HttpMetricsExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/HttpMetricsExtensions.cs",
     "sha": "7c20ef325ca910c2a9b10942fbf1c44e98b16d8e",
+    "content": null,
+    "encodedContent": null,
+    "lines": 30,
     "size": 783,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/HttpMetricsExtensions.cs?ref=master",
     "type": {
@@ -1367,6 +1277,9 @@
     "name": "LoggingExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/LoggingExtensions.cs",
     "sha": "7e27de23c32102ce9407c2d81f4d337469d1f7f3",
+    "content": null,
+    "encodedContent": null,
+    "lines": 67,
     "size": 2322,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/LoggingExtensions.cs?ref=master",
     "type": {
@@ -1378,6 +1291,9 @@
     "name": "ReverseProxyExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/ReverseProxyExtensions.cs",
     "sha": "24b12366a1962980f90da843235f4efa664e933d",
+    "content": null,
+    "encodedContent": null,
+    "lines": 50,
     "size": 1491,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/ReverseProxyExtensions.cs?ref=master",
     "type": {
@@ -1389,6 +1305,9 @@
     "name": "VersioningExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/VersioningExtensions.cs",
     "sha": "3378cc671becbb438bdd9a8dcc5bcc6166e12b17",
+    "content": null,
+    "encodedContent": null,
+    "lines": 40,
     "size": 1433,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/VersioningExtensions.cs?ref=master",
     "type": {
@@ -1400,6 +1319,9 @@
     "name": "CustomControllerFeatureProvider.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/FeatureFlags/CustomControllerFeatureProvider.cs",
     "sha": "6579d77ceb22bfcb4ce89f4115b8c911baf7b63c",
+    "content": null,
+    "encodedContent": null,
+    "lines": 63,
     "size": 2316,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/FeatureFlags/CustomControllerFeatureProvider.cs?ref=master",
     "type": {
@@ -1411,6 +1333,9 @@
     "name": "CustomFeature.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/FeatureFlags/CustomFeature.cs",
     "sha": "ef985c90992aa9b532ae8f457f09391550bb7ce0",
+    "content": null,
+    "encodedContent": null,
+    "lines": 39,
     "size": 770,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/FeatureFlags/CustomFeature.cs?ref=master",
     "type": {
@@ -1422,6 +1347,9 @@
     "name": "FeatureFlagsExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/FeatureFlags/FeatureFlagsExtensions.cs",
     "sha": "453d47797f7a3d8f37250b21415fcf35ba971e86",
+    "content": null,
+    "encodedContent": null,
+    "lines": 34,
     "size": 1008,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/FeatureFlags/FeatureFlagsExtensions.cs?ref=master",
     "type": {
@@ -1433,6 +1361,9 @@
     "name": "ConfigureSwaggerOptions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/Swagger/ConfigureSwaggerOptions.cs",
     "sha": "bdd88451ea8cf8cfb48144236de4b87758032e37",
+    "content": null,
+    "encodedContent": null,
+    "lines": 73,
     "size": 2674,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/Swagger/ConfigureSwaggerOptions.cs?ref=master",
     "type": {
@@ -1444,6 +1375,9 @@
     "name": "SwaggerExtensions.cs",
     "path": "src/GitScraping.WebApi/Modules/Common/Swagger/SwaggerExtensions.cs",
     "sha": "c2009ecbbc6d57c02e8fc7bf06688cdf06c7cdb7",
+    "content": null,
+    "encodedContent": null,
+    "lines": 116,
     "size": 4162,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Modules/Common/Swagger/SwaggerExtensions.cs?ref=master",
     "type": {
@@ -1455,6 +1389,9 @@
     "name": "launchSettings.json",
     "path": "src/GitScraping.WebApi/Properties/launchSettings.json",
     "sha": "c91c248a4843479ccd2883a1222c83eb80bcbcc0",
+    "content": null,
+    "encodedContent": null,
+    "lines": 45,
     "size": 1211,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.WebApi/Properties/launchSettings.json?ref=master",
     "type": {
@@ -1466,6 +1403,9 @@
     "name": "GitScraping.IntegrationTests.csproj",
     "path": "tests/GitScraping.IntegrationTests/GitScraping.IntegrationTests.csproj",
     "sha": "0517e5366b4283e9dee0bd042a812a195b46024d",
+    "content": null,
+    "encodedContent": null,
+    "lines": 52,
     "size": 1958,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.IntegrationTests/GitScraping.IntegrationTests.csproj?ref=master",
     "type": {
@@ -1477,6 +1417,9 @@
     "name": "appsettings.test.json",
     "path": "tests/GitScraping.IntegrationTests/appsettings.test.json",
     "sha": "6019b2fc02fdcd8425daea465f9df40f94e74976",
+    "content": null,
+    "encodedContent": null,
+    "lines": 35,
     "size": 888,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.IntegrationTests/appsettings.test.json?ref=master",
     "type": {
@@ -1487,9 +1430,26 @@
   {
     "name": "GitScraping.UnitTests.csproj",
     "path": "tests/GitScraping.UnitTests/GitScraping.UnitTests.csproj",
-    "sha": "af2307fa89ced56cda05499b8a979db41f5d78a5",
-    "size": 1607,
+    "sha": "1e968b29b383127e652a5fd30e786803c082abb2",
+    "content": null,
+    "encodedContent": null,
+    "lines": 49,
+    "size": 1968,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/GitScraping.UnitTests.csproj?ref=master",
+    "type": {
+      "stringValue": "file",
+      "value": "file"
+    }
+  },
+  {
+    "name": "appsettings.test.json",
+    "path": "tests/GitScraping.UnitTests/appsettings.test.json",
+    "sha": "97ad2b6e347eb4fd5bf5ff894bcc0bbaa488dcb7",
+    "content": null,
+    "encodedContent": null,
+    "lines": 17,
+    "size": 326,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/appsettings.test.json?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
@@ -1499,6 +1459,9 @@
     "name": "launch.json",
     "path": "tests/GitScraping.UnitTests/.vscode/launch.json",
     "sha": "39865f2e3a71eec38f8ef51e9194c993f29707ea",
+    "content": null,
+    "encodedContent": null,
+    "lines": 36,
     "size": 1472,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/.vscode/launch.json?ref=master",
     "type": {
@@ -1510,6 +1473,9 @@
     "name": "tasks.json",
     "path": "tests/GitScraping.UnitTests/.vscode/tasks.json",
     "sha": "6365d6ad80b7a6b22f859d7b169fca20c0f50aff",
+    "content": null,
+    "encodedContent": null,
+    "lines": 42,
     "size": 1262,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/.vscode/tasks.json?ref=master",
     "type": {
@@ -1521,6 +1487,9 @@
     "name": "DescerializeJsonObject.cs",
     "path": "tests/GitScraping.UnitTests/Helpers/DescerializeJsonObject.cs",
     "sha": "ea608a9bc9d8a3dcdfc952d3393944e21afac54e",
+    "content": null,
+    "encodedContent": null,
+    "lines": 21,
     "size": 518,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Helpers/DescerializeJsonObject.cs?ref=master",
     "type": {
@@ -1532,6 +1501,9 @@
     "name": "MapperHelper.cs",
     "path": "tests/GitScraping.UnitTests/Helpers/MapperHelper.cs",
     "sha": "bd78c7791a4387dc45a1a5eca372534af1e73098",
+    "content": null,
+    "encodedContent": null,
+    "lines": 23,
     "size": 569,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Helpers/MapperHelper.cs?ref=master",
     "type": {
@@ -1542,8 +1514,11 @@
   {
     "name": "ObterServiceProviderDb.cs",
     "path": "tests/GitScraping.UnitTests/Helpers/ObterServiceProviderDb.cs",
-    "sha": "9a00724e6ef0812fe5ca3d285cb967e0f8ff2ce8",
-    "size": 1618,
+    "sha": "d3c3393e4e5f23a2d3396083cb606d399e5164d4",
+    "content": null,
+    "encodedContent": null,
+    "lines": 47,
+    "size": 1353,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Helpers/ObterServiceProviderDb.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -1553,8 +1528,11 @@
   {
     "name": "ObterServiceProviderMemDb.cs",
     "path": "tests/GitScraping.UnitTests/Helpers/ObterServiceProviderMemDb.cs",
-    "sha": "6e45a79cd54f7ea2392a334573fc386e7ee9c924",
-    "size": 1621,
+    "sha": "d560eab2fbd672e211e1ed5468468740af33f68a",
+    "content": null,
+    "encodedContent": null,
+    "lines": 47,
+    "size": 1356,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Helpers/ObterServiceProviderMemDb.cs?ref=master",
     "type": {
       "stringValue": "file",
@@ -1565,6 +1543,9 @@
     "name": "SaveJsonObjectToFile.cs",
     "path": "tests/GitScraping.UnitTests/Helpers/SaveJsonObjectToFile.cs",
     "sha": "db4a129fe439d9e16254f5f1737a5f014c03442b",
+    "content": null,
+    "encodedContent": null,
+    "lines": 27,
     "size": 608,
     "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Helpers/SaveJsonObjectToFile.cs?ref=master",
     "type": {
@@ -1573,22 +1554,28 @@
     }
   },
   {
-    "name": "Class1.cs",
-    "path": "tests/GitScraping.UnitTests/Tests/Class1.cs",
-    "sha": "61504a48c42c545ed761aa2157d705f5f92cdeb0",
-    "size": 727,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Tests/Class1.cs?ref=master",
+    "name": "HttpClientHelperTest.cs",
+    "path": "tests/GitScraping.UnitTests/Tests/HttpClientHelperTest.cs",
+    "sha": "dbfebdc98ca2a977786919c1c01881b4006e76ce",
+    "content": null,
+    "encodedContent": null,
+    "lines": 74,
+    "size": 2768,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Tests/HttpClientHelperTest.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
     }
   },
   {
-    "name": "HttpClientHelperTest.cs",
-    "path": "tests/GitScraping.UnitTests/Tests/HttpClientHelperTest.cs",
-    "sha": "0a0766e1ce787306bda1b5abf8eb0ddedc81de18",
-    "size": 2768,
-    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Tests/HttpClientHelperTest.cs?ref=master",
+    "name": "ProcessFilesUseCaseTest.cs",
+    "path": "tests/GitScraping.UnitTests/Tests/ProcessFilesUseCaseTest.cs",
+    "sha": "2d750562638a6123c009a9ef530b33bebae993de",
+    "content": null,
+    "encodedContent": null,
+    "lines": 50,
+    "size": 1499,
+    "url": "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Tests/ProcessFilesUseCaseTest.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"

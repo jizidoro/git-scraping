@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -32,8 +33,6 @@ namespace GitScraping.Application.Services
 
         public async Task<ListResultDto<AirplaneDto>> Listar(PaginationFilter paginationFilter = null)
         {
-            List<AirplaneDto> lista = new();
-
             var repoOwner = "yakkumo";
             var repoName = "git-scraping";
             var path = "/";
@@ -41,15 +40,15 @@ namespace GitScraping.Application.Services
             var files = new List<AirplaneDto>();
 
             var productInformation = new ProductHeaderValue("Github-API-Test");
-            var credentials = new Credentials("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");
+            var credentials = new Credentials("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");
             var client = new GitHubClient(productInformation) {Credentials = credentials};
 
-            // await ListContentsOctokit(repoOwner, repoName, path, client, files);
-            await ListContentsCommitOctokit(repoOwner, repoName, client);
+            await ListContentsOctokit(repoOwner, repoName, path, client, files);
+            // await ListContentsCommitOctokit(repoOwner, repoName, client);
 
             // var httpClientResults = await ListContents(repoOwner, repoName, path);
 
-            return new ListResultDto<AirplaneDto>(lista);
+            return new ListResultDto<AirplaneDto>(files);
         }
 
         public async Task<IList<HttpAirplaneDto>> ListContents(string repoOwner, string repoName, string path)
@@ -105,7 +104,22 @@ namespace GitScraping.Application.Services
                 return dto;
             });
 
-            files.AddRange(sourceFiles);
+
+            foreach (var file in sourceFiles)
+            {
+                var fileContent = await client.Repository.Content.GetAllContents(repoOwner, repoName, file.Path);
+
+                var content = fileContent.FirstOrDefault()?.Content;
+
+                if (content != null)
+                {
+                    var numberLines = content.Split('\n').Length;
+                    file.Line = numberLines;
+                    files.Add(file);
+                }
+            }
+
+            
 
             var dirs = contents.Where(x => x.Type == "Dir");
 
