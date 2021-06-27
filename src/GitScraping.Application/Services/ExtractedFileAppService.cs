@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using AutoMapper;
 using GitScraping.Application.Bases;
 using GitScraping.Application.Dtos;
-using GitScraping.Application.Filters;
 using GitScraping.Application.Interfaces;
 using GitScraping.Core.ExtractedFileCore;
 using GitScraping.Domain.Models;
@@ -31,10 +30,8 @@ namespace GitScraping.Application.Services
         }
 
 
-        public async Task<List<ProcessedFileDto>> Listar()
+        public async Task<List<ProcessedFileDto>> GetReportByLanguage(string repoOwner, string repoName)
         {
-            var repoOwner = "yakkumo";
-            var repoName = "git-scraping";
             var path = "/";
 
             var files = new List<ExtractedFileDto>();
@@ -45,11 +42,16 @@ namespace GitScraping.Application.Services
 
             await ListContentsOctokit(repoOwner, repoName, path, client, files);
 
-            var entity = Mapper.Map<List<ExtractedFile>>(files);
-            var result = _processFilesUseCaseUsecase.Execute(entity);
-            var response = Mapper.Map<List<ProcessedFileDto>>(result);
+            if (files.Any())
+            {
+                var entity = Mapper.Map<List<ExtractedFile>>(files);
+                var result = _processFilesUseCaseUsecase.Execute(entity);
+                var response = Mapper.Map<List<ProcessedFileDto>>(result);
 
-            return new List<ProcessedFileDto>(response);
+                return new List<ProcessedFileDto>(response);
+            }
+
+            return new List<ProcessedFileDto>();
         }
 
         public async Task ListContentsOctokit(string repoOwner, string repoName, string path, GitHubClient client,

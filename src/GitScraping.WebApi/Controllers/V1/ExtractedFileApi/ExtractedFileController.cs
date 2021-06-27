@@ -5,9 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using GitScraping.Application.Bases;
 using GitScraping.Application.Dtos;
-using GitScraping.Application.Filters;
 using GitScraping.Application.Interfaces;
-using GitScraping.Application.Queries;
 using GitScraping.WebApi.Bases;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
 using Microsoft.AspNetCore.Mvc;
@@ -37,17 +35,17 @@ namespace GitScraping.WebApi.Controllers.V1.ExtractedFileApi
         }
 
         [HttpGet]
-        [Route("listar")]
-        public async Task<IActionResult> Listar()
+        [Route("GetReportByLanguage")]
+        public async Task<IActionResult> GetReportByLanguage(string repositoryOwner, string repositoryName)
         {
             try
             {
-                var result = await _extractedFileAppService.Listar();
+                var result = await _extractedFileAppService.GetReportByLanguage(repositoryOwner, repositoryName);
                 return Ok(result);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return Ok(new ExtractedFileDto());
+                return Ok(new SingleResultDto<ExtractedFileDto>(e));
             }
         }
     }

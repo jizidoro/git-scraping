@@ -1,7 +1,6 @@
 #region
 
 using System;
-using GitScraping.WebApi.Modules.Common;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;

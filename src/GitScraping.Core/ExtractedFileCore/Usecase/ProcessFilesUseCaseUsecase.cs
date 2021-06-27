@@ -1,12 +1,7 @@
 ﻿#region
 
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using GitScraping.Core.Helpers.Interfaces;
-using GitScraping.Core.Helpers.Messages;
-using GitScraping.Core.Helpers.Models.Results;
 using GitScraping.Domain.Models;
 
 #endregion
@@ -15,19 +10,15 @@ namespace GitScraping.Core.ExtractedFileCore.Usecase
 {
     public class ProcessFilesUseCaseUsecase : IProcessFilesUseCaseUsecase
     {
-        public ProcessFilesUseCaseUsecase()
-        {
-        }
-
         public List<ProcessedFile> Execute(List<ExtractedFile> extractedFiles)
         {
             GetFileExtension(extractedFiles);
-            var oto = extractedFiles.GroupBy(x => x.Extension).Select(group => new ProcessedFile()
+            var oto = extractedFiles.GroupBy(x => x.Extension).Select(group => new ProcessedFile
             {
                 Extension = group.Key,
                 Count = group.Count(),
                 Lines = group.Sum(x => x.Lines),
-                Bytes = group.Sum(x => x.Size),
+                Bytes = group.Sum(x => x.Size)
             });
 
             var processedFiles = oto as ProcessedFile[] ?? oto.ToArray();

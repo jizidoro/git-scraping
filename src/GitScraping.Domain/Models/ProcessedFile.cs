@@ -1,7 +1,6 @@
 ﻿#region
 
 using GitScraping.Domain.Bases;
-using Octokit;
 
 #endregion
 

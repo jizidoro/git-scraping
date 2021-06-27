@@ -3,7 +3,6 @@
 using System;
 using System.Collections.Generic;
 using GitScraping.Core.Helpers.Interfaces;
-using GitScraping.Core.Helpers.Messages;
 using GitScraping.Domain.Enums;
 using GitScraping.Domain.Interfaces;
 
@@ -56,10 +55,10 @@ namespace GitScraping.Core.Helpers.Models.Results
         }
 
         public IEnumerable<string> Mensagens { get; set; }
+        public string Mensagem { get; set; }
 
         public int Codigo { get; set; }
         public bool Sucesso { get; set; }
-        public string Mensagem { get; set; }
         public TEntity Data { get; set; }
     }
 }

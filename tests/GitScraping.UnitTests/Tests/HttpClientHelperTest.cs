@@ -1,5 +1,8 @@
-﻿using System;
+﻿#region
+
+using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
@@ -9,21 +12,24 @@ using GitScraping.Application.Dtos;
 using GitScraping.Application.Services;
 using Moq;
 using Moq.Protected;
+using Newtonsoft.Json;
 using Xunit;
+
+#endregion
 
 namespace GitScraping.UnitTests.Tests
 {
     public class HttpClientHelperTest
     {
-        protected HttpClientHelper HttpClientHelperUnderTest { get; }
-
         public HttpClientHelperTest()
         {
             HttpClientHelperUnderTest = new HttpClientHelper();
         }
 
+        protected HttpClientHelper HttpClientHelperUnderTest { get; }
+
         /// <summary>
-        /// Weather info by city name test cases are resides.
+        ///     Weather info by city name test cases are resides.
         /// </summary>
         public class GetAsyncHttpHelper : HttpClientHelperTest
         {
@@ -31,9 +37,9 @@ namespace GitScraping.UnitTests.Tests
             public async Task When_GetAsync_Returns_Success_Result()
             {
                 //Arrange;
-                var result = new List<ExtractedFileDto>()
+                var result = new List<ExtractedFileDto>
                 {
-                    new ExtractedFileDto() { }
+                    new()
                 };
                 var httpMessageHandler = new Mock<HttpMessageHandler>();
                 var fixture = new Fixture();
@@ -47,11 +53,11 @@ namespace GitScraping.UnitTests.Tests
                     )
                     .ReturnsAsync((HttpRequestMessage request, CancellationToken token) =>
                     {
-                        HttpResponseMessage response = new HttpResponseMessage();
-                        response.StatusCode = System.Net.HttpStatusCode.OK; //Setting statuscode
+                        var response = new HttpResponseMessage();
+                        response.StatusCode = HttpStatusCode.OK; //Setting statuscode
                         response.Content =
                             new StringContent(
-                                Newtonsoft.Json.JsonConvert.SerializeObject(result)); // configure your response here
+                                JsonConvert.SerializeObject(result)); // configure your response here
                         response.Content.Headers.ContentType =
                             new MediaTypeHeaderValue("application/json"); //Setting media type for the response
                         return response;

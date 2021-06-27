@@ -1,9 +1,6 @@
 ﻿#region
 
-using System;
 using System.Reflection;
-using System.Threading.Tasks;
-using GitScraping.Application.Services;
 using GitScraping.Core.ExtractedFileCore.Usecase;
 using GitScraping.Domain.Models;
 using GitScraping.Domain.Utils;
@@ -17,15 +14,14 @@ namespace GitScraping.UnitTests.Tests
 {
     public sealed class ProcessFilesUseCaseTest
     {
-        private readonly ITestOutputHelper _output;
+        private const string JsonPath = "GitScraping.Domain.SeedData";
         private readonly getServiceProviderMemDb _getServiceProviderMemDb = new();
+        private readonly ITestOutputHelper _output;
 
         public ProcessFilesUseCaseTest(ITestOutputHelper output)
         {
             _output = output;
         }
-
-        private const string JsonPath = "GitScraping.Domain.SeedData";
 
         [Fact]
         public void ProcessFilesUseCase_Returns_GroupedFiles()

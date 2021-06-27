@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#region
+
+using System;
 using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using GitScraping.Application.Interfaces;
+
+#endregion
 
 namespace GitScraping.Application.Services
 {
@@ -15,17 +17,17 @@ namespace GitScraping.Application.Services
 
         public async Task<TResult> GetAsync<TResult>(string requestUri)
         {
-            TResult objResult = default(TResult);
+            var objResult = default(TResult);
 
-            using var client = this.GetHttpClient();
+            using var client = GetHttpClient();
             using var response = await client.GetAsync(requestUri);
 
-            if (TryParse<TResult>(response, out objResult))
+            if (TryParse(response, out objResult))
             {
                 return objResult;
             }
 
-            using HttpContent content = response.Content;
+            using var content = response.Content;
 
             throw new HttpRequestException(response.Content.ReadAsStringAsync().Result);
         }
@@ -63,7 +65,7 @@ namespace GitScraping.Application.Services
                 return true;
             }
 
-            t = default(TResult);
+            t = default;
             return false;
         }
 

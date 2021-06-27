@@ -1,13 +1,12 @@
 ﻿#region
 
-
-#endregion
-
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using GitScraping.Domain.Bases;
+
+#endregion
 
 namespace GitScraping.Domain.Utils
 {

@@ -1,15 +1,11 @@
 ﻿#region
 
-using GitScraping.Application.Interfaces;
-using GitScraping.Application.Services;
-using GitScraping.Core.Helpers.Interfaces;
 using GitScraping.WebApi.Modules;
 using GitScraping.WebApi.Modules.Common;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
 using GitScraping.WebApi.Modules.Common.Swagger;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json;
 
 #endregion
 
@@ -40,7 +36,7 @@ namespace GitScraping.UnitTests.Helpers
             services.AddAutoMapperSetup();
 
             services.AddLogging();
-            
+
             return services.BuildServiceProvider();
         }
     }
