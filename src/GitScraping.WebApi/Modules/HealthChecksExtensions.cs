@@ -50,7 +50,7 @@ namespace GitScraping.WebApi.Modules
                     .AddInMemoryStorage();
 
                 healthChecks.AddSqlServer(configuration.GetValue<string>("PersistenceModule:DefaultConnection"),
-                    name: "sqlserver", tags: new string[] {"db", "data"});
+                    name: "sqlserver", tags: new[] {"db", "data"});
             }
 
 

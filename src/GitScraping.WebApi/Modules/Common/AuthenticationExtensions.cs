@@ -1,12 +1,9 @@
 #region
 
-using System.Text;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.FeatureManagement;
-using Microsoft.IdentityModel.Tokens;
 
 #endregion
 

@@ -2,7 +2,6 @@
 
 using System.Collections.Generic;
 using GitScraping.Application.Utils;
-using GitScraping.Core.Helpers.Messages;
 using GitScraping.Domain.Enums;
 
 #endregion

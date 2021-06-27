@@ -1,6 +1,5 @@
 ﻿#region
 
-using System.Collections.Generic;
 using GitScraping.Application.Utils;
 
 #endregion

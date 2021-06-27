@@ -10,7 +10,6 @@ using GitScraping.Application.Interfaces;
 using GitScraping.Application.Queries;
 using GitScraping.WebApi.Bases;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.FeatureManagement.Mvc;

@@ -1,14 +1,8 @@
 ﻿#region
 
-#endregion
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Text.RegularExpressions;
-using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using GitScraping.Application.Bases;
@@ -16,6 +10,8 @@ using GitScraping.Application.Dtos.AirplaneDtos;
 using GitScraping.Application.Filters;
 using GitScraping.Application.Interfaces;
 using Octokit;
+
+#endregion
 
 namespace GitScraping.Application.Services
 {
@@ -75,7 +71,7 @@ namespace GitScraping.Application.Services
             try
             {
                 var tipCommit = await client.Repository.GetAllLanguages(repoOwner, repoName);
-                
+
                 var stats = new Dictionary<string, int>();
             }
             catch (Exception e)
@@ -83,7 +79,6 @@ namespace GitScraping.Application.Services
                 Console.WriteLine(e);
                 throw;
             }
-
         }
 
         public async Task ListContentsOctokit(string repoOwner, string repoName, string path, GitHubClient client,
@@ -114,12 +109,11 @@ namespace GitScraping.Application.Services
                 if (content != null)
                 {
                     var numberLines = content.Split('\n').Length;
-                    file.Line = numberLines;
+                    file.Lines = numberLines;
                     files.Add(file);
                 }
             }
 
-            
 
             var dirs = contents.Where(x => x.Type == "Dir");
 

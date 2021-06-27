@@ -1,10 +1,5 @@
 #region
 
-using GitScraping.Application.Interfaces;
-using GitScraping.Application.Services;
-using GitScraping.Core.Helpers.Extensions;
-using GitScraping.Core.Helpers.Interfaces;
-using GitScraping.Core.Helpers.Models;
 using GitScraping.WebApi.Modules;
 using GitScraping.WebApi.Modules.Common;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
@@ -15,7 +10,6 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Newtonsoft.Json;
 using Prometheus;
 using Serilog;
 

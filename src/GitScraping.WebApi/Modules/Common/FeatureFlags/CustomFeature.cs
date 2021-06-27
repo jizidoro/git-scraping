@@ -9,7 +9,7 @@ namespace GitScraping.WebApi.Modules.Common.FeatureFlags
         ///     Get Airplane.
         /// </summary>
         Airplane,
-        
+
         /// <summary>
         ///     Get Comum.
         /// </summary>

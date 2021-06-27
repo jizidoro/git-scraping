@@ -20,7 +20,6 @@ namespace GitScraping.WebApi.Modules
         /// <returns>The modified instance.</returns>
         public static IServiceCollection AddUseCases(this IServiceCollection services)
         {
-
             #region Airplane
 
             // Application - Services
@@ -28,7 +27,7 @@ namespace GitScraping.WebApi.Modules
             services.AddScoped<IHttpClientHelper, HttpClientHelper>();
 
             #endregion
-            
+
 
             return services;
         }
