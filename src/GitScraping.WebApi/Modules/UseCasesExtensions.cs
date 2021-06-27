@@ -23,7 +23,9 @@ namespace GitScraping.WebApi.Modules
         public static IServiceCollection AddUseCases(this IServiceCollection services)
         {
             services.AddScoped<IExtractedFileAppService, ExtractedFileAppService>();
-            services.AddScoped<IProcessFilesUseCaseUsecase, ProcessFilesUseCaseUsecase>();
+            services.AddScoped<IProcessFilesUsecase, ProcessFilesUsecase>();
+            services.AddScoped<IGetContentsOctokitUsecase, GetContentsOctokitUsecase>();
+            services.AddScoped<IGetAllSourceFilesFromRepositoryUsecase, GetAllSourceFilesFromRepositoryUsecase>();
             services.AddScoped<IHttpClientHelper, HttpClientHelper>();
 
             return services;

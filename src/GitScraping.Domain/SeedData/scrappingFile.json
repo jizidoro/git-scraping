@@ -547,13 +547,13 @@
     }
   },
   {
-    "name": "ProcessFilesUseCaseUsecase.cs",
-    "path": "src/GitScraping.Core/ExtractedFileCore/Usecase/ProcessFilesUseCaseUsecase.cs",
+    "name": "ProcessFilesUsecase.cs",
+    "path": "src/GitScraping.Core/ExtractedFileCore/Usecase/ProcessFilesUsecase.cs",
     "sha": "ddb8117f2b8053a6e3535a996ab9ca104491355f",
     "lines": 35,
     "size": 829,
     "url":
-      "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/ExtractedFileCore/Usecase/ProcessFilesUseCaseUsecase.cs?ref=master",
+      "https://api.github.com/repos/yakkumo/git-scraping/contents/src/GitScraping.Core/ExtractedFileCore/Usecase/ProcessFilesUsecase.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"

@@ -33,9 +33,9 @@ namespace GitScraping.UnitTests.Tests
                 var extractedFiles = JsonUtilities.GetListFromJson<ExtractedFile>(
                     assembly.GetManifestResourceStream($"{JsonPath}.scrappingFile.json"));
 
-                var processFilesUseCaseUsecase = new ProcessFilesUseCaseUsecase();
+                var processFilesUsecase = new ProcessFilesUsecase();
 
-                var result = processFilesUseCaseUsecase.Execute(extractedFiles);
+                var result = processFilesUsecase.Execute(extractedFiles);
 
                 Assert.NotNull(result);
             }

@@ -9,6 +9,7 @@ using GitScraping.Application.Bases;
 using GitScraping.Application.Dtos;
 using GitScraping.Application.Interfaces;
 using GitScraping.Core.ExtractedFileCore;
+using GitScraping.Core.ExtractedFileCore.Usecase;
 using GitScraping.Domain.Models;
 using Octokit;
 
@@ -19,83 +20,40 @@ namespace GitScraping.Application.Services
     public class ExtractedFileAppService : AppService, IExtractedFileAppService
     {
         private readonly IHttpClientHelper _httpClientHelper;
-        private readonly IProcessFilesUseCaseUsecase _processFilesUseCaseUsecase;
+        private readonly IProcessFilesUsecase _processFilesUsecase;
+        private readonly IGetAllSourceFilesFromRepositoryUsecase _getAllSourceFilesFromRepository;
 
         public ExtractedFileAppService(
-            IMapper mapper, IHttpClientHelper httpClientHelper, IProcessFilesUseCaseUsecase processFilesUseCaseUsecase)
+            IMapper mapper, IHttpClientHelper httpClientHelper, IProcessFilesUsecase processFilesUsecase, IGetAllSourceFilesFromRepositoryUsecase getAllSourceFilesFromRepository)
             : base(mapper)
         {
             _httpClientHelper = httpClientHelper ?? throw new ArgumentNullException(nameof(HttpClientHelper));
-            _processFilesUseCaseUsecase = processFilesUseCaseUsecase;
+            _processFilesUsecase = processFilesUsecase;
+            _getAllSourceFilesFromRepository = getAllSourceFilesFromRepository;
         }
 
 
-        public async Task<List<ProcessedFileDto>> GetReportByLanguage(string repoOwner, string repoName)
+        public async Task<List<ProcessedFileDto>> GetReportByLanguage(string repositoryOwner, string repoName)
         {
-            var path = "/";
+            var gitHubClient = GitHubClientUsecase.Execute();
+            var sourceFiles = await _getAllSourceFilesFromRepository.Execute(repositoryOwner, repoName, gitHubClient);
 
-            var files = new List<ExtractedFileDto>();
-
-            var value = Environment.GetEnvironmentVariable("git-credential");
-
-            var productInformation = new ProductHeaderValue("Github-API-Test");
-            var credentials = new Credentials(value);
-            var client = new GitHubClient(productInformation) {Credentials = credentials};
-
-            await ListContentsOctokit(repoOwner, repoName, path, client, files);
-
-            if (files.Any())
+            if (sourceFiles.Any())
             {
-                var entity = Mapper.Map<List<ExtractedFile>>(files);
-                var result = _processFilesUseCaseUsecase.Execute(entity);
-                var response = Mapper.Map<List<ProcessedFileDto>>(result);
-
+                var response = ProcessFiles(sourceFiles);
                 return new List<ProcessedFileDto>(response);
             }
 
             return new List<ProcessedFileDto>();
         }
 
-        public async Task ListContentsOctokit(string repoOwner, string repoName, string path, GitHubClient client,
-            List<ExtractedFileDto> files)
+        private List<ProcessedFileDto> ProcessFiles(List<ExtractedFile> files)
         {
-            var contents = await client.Repository.Content.GetAllContents(repoOwner, repoName, path);
-            var sourceFiles = contents.Where(x => x.Type != "Dir").Select(x =>
-            {
-                var dto = new ExtractedFileDto
-                {
-                    Name = x.Name,
-                    Path = x.Path,
-                    Sha = x.Sha,
-                    Type = x.Type,
-                    Url = x.Url,
-                    Size = x.Size
-                };
-                return dto;
-            });
-
-
-            foreach (var file in sourceFiles)
-            {
-                var fileContent = await client.Repository.Content.GetAllContents(repoOwner, repoName, file.Path);
-
-                var content = fileContent.FirstOrDefault()?.Content;
-
-                if (content != null)
-                {
-                    var numberLines = content.Split('\n').Length;
-                    file.Lines = numberLines;
-                    files.Add(file);
-                }
-            }
-
-
-            var dirs = contents.Where(x => x.Type == "Dir");
-
-            foreach (var dir in dirs)
-            {
-                await ListContentsOctokit(repoOwner, repoName, dir.Path, client, files);
-            }
+            var result = _processFilesUsecase.Execute(files);
+            var response = Mapper.Map<List<ProcessedFileDto>>(result);
+            return response;
         }
+
+        
     }
 }

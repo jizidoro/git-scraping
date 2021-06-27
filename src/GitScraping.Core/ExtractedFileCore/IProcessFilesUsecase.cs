@@ -7,7 +7,7 @@ using GitScraping.Domain.Models;
 
 namespace GitScraping.Core.ExtractedFileCore
 {
-    public interface IProcessFilesUseCaseUsecase
+    public interface IProcessFilesUsecase
     {
         List<ProcessedFile> Execute(List<ExtractedFile> extractedFiles);
     }
