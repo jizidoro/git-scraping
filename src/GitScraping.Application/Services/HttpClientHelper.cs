@@ -58,6 +58,8 @@ namespace GitScraping.Application.Services
 
             if (response.IsSuccessStatusCode)
             {
+                var teste = response.Content.ReadAsStringAsync().Result;
+
                 t = ReadAsAsync<TResult>(response.Content).Result;
                 return true;
             }

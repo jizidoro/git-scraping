@@ -41,13 +41,13 @@ namespace GitScraping.Application.Services
             var files = new List<AirplaneDto>();
 
             var productInformation = new ProductHeaderValue("Github-API-Test");
-            var credentials = new Credentials("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");
+            var credentials = new Credentials("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");
             var client = new GitHubClient(productInformation) {Credentials = credentials};
 
             // await ListContentsOctokit(repoOwner, repoName, path, client, files);
             await ListContentsCommitOctokit(repoOwner, repoName, client);
 
-            var httpClientResults = await ListContents(repoOwner, repoName, path);
+            // var httpClientResults = await ListContents(repoOwner, repoName, path);
 
             return new ListResultDto<AirplaneDto>(lista);
         }
@@ -56,8 +56,11 @@ namespace GitScraping.Application.Services
         {
             try
             {
+                //var resp = await _httpClientHelper.GetAsync<List<HttpAirplaneDto>>(
+                //    $"repos/{repoOwner}/{repoName}/contents/{path}");
+
                 var resp = await _httpClientHelper.GetAsync<List<HttpAirplaneDto>>(
-                    $"repos/{repoOwner}/{repoName}/contents/{path}");
+                    $"repos/{repoOwner}/{repoName}/stats/code_frequency");
 
                 return resp;
             }
@@ -70,10 +73,18 @@ namespace GitScraping.Application.Services
 
         public async Task ListContentsCommitOctokit(string repoOwner, string repoName, GitHubClient client)
         {
-            var tipCommit = await client.Repository.Commit.Get(repoOwner, repoName, "master");
-            var allPaths = tipCommit.Files.Select(f => f.Filename);
+            try
+            {
+                var tipCommit = await client.Repository.GetAllLanguages(repoOwner, repoName);
+                
+                var stats = new Dictionary<string, int>();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
 
-            var stats = new Dictionary<string, int>();
         }
 
         public async Task ListContentsOctokit(string repoOwner, string repoName, string path, GitHubClient client,
