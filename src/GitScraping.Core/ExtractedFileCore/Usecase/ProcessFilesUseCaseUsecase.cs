@@ -13,7 +13,7 @@ using GitScraping.Domain.Models;
 
 namespace GitScraping.Core.ExtractedFileCore.Usecase
 {
-    public class ProcessFilesUseCaseUsecase
+    public class ProcessFilesUseCaseUsecase : IProcessFilesUseCaseUsecase
     {
         public ProcessFilesUseCaseUsecase()
         {

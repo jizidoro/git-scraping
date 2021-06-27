@@ -13,6 +13,6 @@ namespace GitScraping.Application.Interfaces
 {
     public interface IExtractedFileAppService : IAppService
     {
-        Task<List<ExtractedFileDto>> Listar();
+        Task<List<ProcessedFileDto>> Listar();
     }
 }

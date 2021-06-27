@@ -16,7 +16,7 @@ using Microsoft.FeatureManagement.Mvc;
 
 #endregion
 
-namespace GitScraping.WebApi.Controllers.V1.AirplaneApi
+namespace GitScraping.WebApi.Controllers.V1.ExtractedFileApi
 {
     [FeatureGate(CustomFeature.ExtractedFile)]
     [ApiVersion("1.0")]

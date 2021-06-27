@@ -9,6 +9,8 @@ using GitScraping.Application.Bases;
 using GitScraping.Application.Dtos;
 using GitScraping.Application.Filters;
 using GitScraping.Application.Interfaces;
+using GitScraping.Core.ExtractedFileCore;
+using GitScraping.Domain.Models;
 using Octokit;
 
 #endregion
@@ -18,16 +20,18 @@ namespace GitScraping.Application.Services
     public class ExtractedFileAppService : AppService, IExtractedFileAppService
     {
         private readonly IHttpClientHelper _httpClientHelper;
+        private readonly IProcessFilesUseCaseUsecase _processFilesUseCaseUsecase;
 
         public ExtractedFileAppService(
-            IMapper mapper, IHttpClientHelper httpClientHelper)
+            IMapper mapper, IHttpClientHelper httpClientHelper, IProcessFilesUseCaseUsecase processFilesUseCaseUsecase)
             : base(mapper)
         {
             _httpClientHelper = httpClientHelper ?? throw new ArgumentNullException(nameof(HttpClientHelper));
+            _processFilesUseCaseUsecase = processFilesUseCaseUsecase;
         }
 
 
-        public async Task<List<ExtractedFileDto>> Listar()
+        public async Task<List<ProcessedFileDto>> Listar()
         {
             var repoOwner = "yakkumo";
             var repoName = "git-scraping";
@@ -40,45 +44,14 @@ namespace GitScraping.Application.Services
             var client = new GitHubClient(productInformation) {Credentials = credentials};
 
             await ListContentsOctokit(repoOwner, repoName, path, client, files);
-            // await ListContentsCommitOctokit(repoOwner, repoName, client);
 
-            // var httpClientResults = await ListContents(repoOwner, repoName, path);
+            var entity = Mapper.Map<List<ExtractedFile>>(files);
 
-            return new List<ExtractedFileDto>(files);
-        }
+            var teste = _processFilesUseCaseUsecase.Execute(entity);
 
-        public async Task<IList<HttpExtractedFileDto>> ListContents(string repoOwner, string repoName, string path)
-        {
-            try
-            {
-                //var resp = await _httpClientHelper.GetAsync<List<HttpExtractedFileDto>>(
-                //    $"repos/{repoOwner}/{repoName}/contents/{path}");
+            var result = Mapper.Map<List<ProcessedFileDto>>(teste);
 
-                var resp = await _httpClientHelper.GetAsync<List<HttpExtractedFileDto>>(
-                    $"repos/{repoOwner}/{repoName}/stats/code_frequency");
-
-                return resp;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
-        }
-
-        public async Task ListContentsCommitOctokit(string repoOwner, string repoName, GitHubClient client)
-        {
-            try
-            {
-                var tipCommit = await client.Repository.GetAllLanguages(repoOwner, repoName);
-
-                var stats = new Dictionary<string, int>();
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
+            return new List<ProcessedFileDto>(result);
         }
 
         public async Task ListContentsOctokit(string repoOwner, string repoName, string path, GitHubClient client,
