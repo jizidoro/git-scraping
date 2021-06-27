@@ -15,8 +15,6 @@ namespace GitScraping.Application.Dtos.AirplaneDtos
         public string Name { get; set; }
         public string Path { get; set; }
         public string Sha { get; set; }
-        public string Content { get; set; }
-        public string EncodedContent { get; set; }
         public int Lines { get; set; }
         public int Size { get; set; }
         public string Url { get; set; }
