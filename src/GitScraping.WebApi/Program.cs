@@ -51,7 +51,6 @@ namespace GitScraping.WebApi
                 {
                     configApp.AddCommandLine(args);
                     var settings = configApp.Build();
-                    LoggingExtensions.CreateLogMongoDb(Providers, settings);
                 })
                 .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); })
                 .UseSerilog(providers: Providers);
