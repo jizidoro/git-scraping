@@ -36,8 +36,10 @@ namespace GitScraping.Application.Services
 
             var files = new List<ExtractedFileDto>();
 
+            var value = Environment.GetEnvironmentVariable("git-credential");
+
             var productInformation = new ProductHeaderValue("Github-API-Test");
-            var credentials = new Credentials("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");
+            var credentials = new Credentials(value);
             var client = new GitHubClient(productInformation) {Credentials = credentials};
 
             await ListContentsOctokit(repoOwner, repoName, path, client, files);
