@@ -15,7 +15,7 @@ using Newtonsoft.Json;
 
 namespace GitScraping.UnitTests.Helpers
 {
-    public class ObterServiceProviderDb
+    public class getServiceProviderDb
     {
         public ServiceProvider Execute()
         {

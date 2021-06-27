@@ -1,7 +1,7 @@
 ﻿#region
 
 using AutoMapper;
-using GitScraping.Application.Dtos.AirplaneDtos;
+using GitScraping.Application.Dtos;
 using GitScraping.Domain.Models;
 
 #endregion
@@ -12,7 +12,7 @@ namespace GitScraping.Application.AutoMapper
     {
         public DtoToDomainMappingProfile()
         {
-            CreateMap<AirplaneDto, ExtractedFile>();
+            CreateMap<ExtractedFileDto, ExtractedFile>();
         }
     }
 }

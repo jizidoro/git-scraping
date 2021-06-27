@@ -86,7 +86,7 @@ namespace GitScraping.WebApi.Modules
             var teste = JsonSerializer.Serialize(
                 new
                 {
-                    currentTime = HorariosFusoExtensions.ObterHorarioBrasilia(),
+                    currentTime = HorariosFusoExtensions.getHorarioBrasilia(),
                     statusApplication = result.Status.ToString(),
                     healthChecks = result.Entries.Select(e => new
                     {

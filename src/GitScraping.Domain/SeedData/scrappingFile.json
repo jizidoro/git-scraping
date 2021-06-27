@@ -1388,26 +1388,26 @@
     }
   },
   {
-    "name": "ObterServiceProviderDb.cs",
-    "path": "tests/GitScraping.UnitTests/Helpers/ObterServiceProviderDb.cs",
+    "name": "getServiceProviderDb.cs",
+    "path": "tests/GitScraping.UnitTests/Helpers/getServiceProviderDb.cs",
     "sha": "d3c3393e4e5f23a2d3396083cb606d399e5164d4",
     "lines": 47,
     "size": 1353,
     "url":
-      "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Helpers/ObterServiceProviderDb.cs?ref=master",
+      "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Helpers/getServiceProviderDb.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"
     }
   },
   {
-    "name": "ObterServiceProviderMemDb.cs",
-    "path": "tests/GitScraping.UnitTests/Helpers/ObterServiceProviderMemDb.cs",
+    "name": "getServiceProviderMemDb.cs",
+    "path": "tests/GitScraping.UnitTests/Helpers/getServiceProviderMemDb.cs",
     "sha": "d560eab2fbd672e211e1ed5468468740af33f68a",
     "lines": 47,
     "size": 1356,
     "url":
-      "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Helpers/ObterServiceProviderMemDb.cs?ref=master",
+      "https://api.github.com/repos/yakkumo/git-scraping/contents/tests/GitScraping.UnitTests/Helpers/getServiceProviderMemDb.cs?ref=master",
     "type": {
       "stringValue": "file",
       "value": "file"

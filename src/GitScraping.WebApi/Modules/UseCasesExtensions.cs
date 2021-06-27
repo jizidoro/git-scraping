@@ -23,7 +23,7 @@ namespace GitScraping.WebApi.Modules
             #region Airplane
 
             // Application - Services
-            services.AddScoped<IAirplaneAppService, AirplaneAppService>();
+            services.AddScoped<IExtractedFileAppService, ExtractedFileAppService>();
             services.AddScoped<IHttpClientHelper, HttpClientHelper>();
 
             #endregion

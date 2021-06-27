@@ -4,7 +4,7 @@ using System;
 using System.Threading.Tasks;
 using AutoMapper;
 using GitScraping.Application.Bases;
-using GitScraping.Application.Dtos.AirplaneDtos;
+using GitScraping.Application.Dtos;
 using GitScraping.Application.Filters;
 using GitScraping.Application.Interfaces;
 using GitScraping.Application.Queries;
@@ -18,42 +18,36 @@ using Microsoft.FeatureManagement.Mvc;
 
 namespace GitScraping.WebApi.Controllers.V1.AirplaneApi
 {
-    [FeatureGate(CustomFeature.Airplane)]
+    [FeatureGate(CustomFeature.ExtractedFile)]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
-    public class AirplaneController : GitScrapingController
+    public class ExtractedFileController : GitScrapingController
     {
-        private readonly IAirplaneAppService _airplaneAppService;
-        private readonly ILogger<AirplaneController> _logger;
+        private readonly IExtractedFileAppService _extractedFileAppService;
+        private readonly ILogger<ExtractedFileController> _logger;
         private readonly IMapper _mapper;
 
-        public AirplaneController(
-            IAirplaneAppService airplaneAppService, IMapper mapper, ILogger<AirplaneController> logger)
+        public ExtractedFileController(
+            IExtractedFileAppService extractedFileAppService, IMapper mapper, ILogger<ExtractedFileController> logger)
         {
-            _airplaneAppService = airplaneAppService;
+            _extractedFileAppService = extractedFileAppService;
             _mapper = mapper;
             _logger = logger;
         }
 
         [HttpGet]
         [Route("listar")]
-        public async Task<IActionResult> Listar([FromQuery] PaginationQuery? paginationQuery)
+        public async Task<IActionResult> Listar()
         {
             try
             {
-                PaginationFilter? paginationFilter = null;
-                if (paginationQuery != null)
-                {
-                    paginationFilter = _mapper.Map<PaginationQuery, PaginationFilter>(paginationQuery);
-                }
-
-                var result = await _airplaneAppService.Listar(paginationFilter);
+                var result = await _extractedFileAppService.Listar();
                 return Ok(result);
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                return Ok(new SingleResultDto<AirplaneDto>(e));
+                return Ok(new ExtractedFileDto());
             }
         }
     }

@@ -8,7 +8,7 @@ namespace GitScraping.Core.Helpers.Extensions
 {
     public static class HorariosFusoExtensions
     {
-        public static DateTime ObterHorarioBrasilia()
+        public static DateTime getHorarioBrasilia()
         {
             var timeUtc = DateTime.UtcNow;
             var kstZone = TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time");

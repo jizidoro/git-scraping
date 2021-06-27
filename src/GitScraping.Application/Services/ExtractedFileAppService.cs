@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using GitScraping.Application.Bases;
-using GitScraping.Application.Dtos.AirplaneDtos;
+using GitScraping.Application.Dtos;
 using GitScraping.Application.Filters;
 using GitScraping.Application.Interfaces;
 using Octokit;
@@ -15,11 +15,11 @@ using Octokit;
 
 namespace GitScraping.Application.Services
 {
-    public class AirplaneAppService : AppService, IAirplaneAppService
+    public class ExtractedFileAppService : AppService, IExtractedFileAppService
     {
         private readonly IHttpClientHelper _httpClientHelper;
 
-        public AirplaneAppService(
+        public ExtractedFileAppService(
             IMapper mapper, IHttpClientHelper httpClientHelper)
             : base(mapper)
         {
@@ -27,13 +27,13 @@ namespace GitScraping.Application.Services
         }
 
 
-        public async Task<ListResultDto<AirplaneDto>> Listar(PaginationFilter paginationFilter = null)
+        public async Task<List<ExtractedFileDto>> Listar()
         {
             var repoOwner = "yakkumo";
             var repoName = "git-scraping";
             var path = "/";
 
-            var files = new List<AirplaneDto>();
+            var files = new List<ExtractedFileDto>();
 
             var productInformation = new ProductHeaderValue("Github-API-Test");
             var credentials = new Credentials("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");
@@ -44,17 +44,17 @@ namespace GitScraping.Application.Services
 
             // var httpClientResults = await ListContents(repoOwner, repoName, path);
 
-            return new ListResultDto<AirplaneDto>(files);
+            return new List<ExtractedFileDto>(files);
         }
 
-        public async Task<IList<HttpAirplaneDto>> ListContents(string repoOwner, string repoName, string path)
+        public async Task<IList<HttpExtractedFileDto>> ListContents(string repoOwner, string repoName, string path)
         {
             try
             {
-                //var resp = await _httpClientHelper.GetAsync<List<HttpAirplaneDto>>(
+                //var resp = await _httpClientHelper.GetAsync<List<HttpExtractedFileDto>>(
                 //    $"repos/{repoOwner}/{repoName}/contents/{path}");
 
-                var resp = await _httpClientHelper.GetAsync<List<HttpAirplaneDto>>(
+                var resp = await _httpClientHelper.GetAsync<List<HttpExtractedFileDto>>(
                     $"repos/{repoOwner}/{repoName}/stats/code_frequency");
 
                 return resp;
@@ -82,12 +82,12 @@ namespace GitScraping.Application.Services
         }
 
         public async Task ListContentsOctokit(string repoOwner, string repoName, string path, GitHubClient client,
-            List<AirplaneDto> files)
+            List<ExtractedFileDto> files)
         {
             var contents = await client.Repository.Content.GetAllContents(repoOwner, repoName, path);
             var sourceFiles = contents.Where(x => x.Type != "Dir").Select(x =>
             {
-                var dto = new AirplaneDto
+                var dto = new ExtractedFileDto
                 {
                     Name = x.Name,
                     Path = x.Path,

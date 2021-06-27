@@ -2,7 +2,7 @@
 
 using AutoMapper;
 using GitScraping.Application.Bases;
-using GitScraping.Application.Dtos.AirplaneDtos;
+using GitScraping.Application.Dtos;
 using GitScraping.Domain.Bases;
 using GitScraping.Domain.Models;
 
@@ -16,7 +16,7 @@ namespace GitScraping.Application.AutoMapper
         {
             CreateMap<Entity, EntityDto>();
 
-            CreateMap<ExtractedFile, AirplaneDto>();
+            CreateMap<ExtractedFile, ExtractedFileDto>();
         }
     }
 }

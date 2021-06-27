@@ -1,8 +1,9 @@
 ﻿#region
 
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using GitScraping.Application.Bases;
-using GitScraping.Application.Dtos.AirplaneDtos;
+using GitScraping.Application.Dtos;
 using GitScraping.Application.Filters;
 using GitScraping.Application.Utils;
 
@@ -10,8 +11,8 @@ using GitScraping.Application.Utils;
 
 namespace GitScraping.Application.Interfaces
 {
-    public interface IAirplaneAppService : IAppService
+    public interface IExtractedFileAppService : IAppService
     {
-        Task<ListResultDto<AirplaneDto>> Listar(PaginationFilter paginationFilter = null);
+        Task<List<ExtractedFileDto>> Listar();
     }
 }

@@ -10,8 +10,8 @@ namespace GitScraping.Domain.Models
     public class ProcessedFile : Entity
     {
         public string Extension { get; set; }
-        public string Count { get; set; }
-        public string Lines { get; set; }
-        public int Bytes { get; set; }
+        public int Count { get; set; }
+        public decimal Lines { get; set; }
+        public decimal Bytes { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoFixture;
-using GitScraping.Application.Dtos.AirplaneDtos;
+using GitScraping.Application.Dtos;
 using GitScraping.Application.Services;
 using Moq;
 using Moq.Protected;
@@ -31,9 +31,9 @@ namespace GitScraping.UnitTests.Tests
             public async Task When_GetAsync_Returns_Success_Result()
             {
                 //Arrange;
-                var result = new List<AirplaneDto>()
+                var result = new List<ExtractedFileDto>()
                 {
-                    new AirplaneDto() { }
+                    new ExtractedFileDto() { }
                 };
                 var httpMessageHandler = new Mock<HttpMessageHandler>();
                 var fixture = new Fixture();
@@ -64,7 +64,7 @@ namespace GitScraping.UnitTests.Tests
                     httpClient; //Mocking setting Httphandler object to interface property.
 
                 //Act
-                var weatherResult = await HttpClientHelperUnderTest.GetAsync<List<AirplaneDto>>(string.Empty);
+                var weatherResult = await HttpClientHelperUnderTest.GetAsync<List<ExtractedFileDto>>(string.Empty);
 
                 // Assert
                 Assert.NotNull(weatherResult);

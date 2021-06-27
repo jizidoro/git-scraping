@@ -5,7 +5,6 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using GitScraping.Application.Dtos.AirplaneDtos;
 using GitScraping.Application.Interfaces;
 
 namespace GitScraping.Application.Services

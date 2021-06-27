@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using GitScraping.Core.Helpers.Interfaces;
 using GitScraping.Core.Helpers.Messages;
@@ -18,18 +19,29 @@ namespace GitScraping.Core.ExtractedFileCore.Usecase
         {
         }
 
-        public async Task<ISingleResult<ExtractedFile>> Execute(List<ExtractedFile> entity)
+        public List<ProcessedFile> Execute(List<ExtractedFile> extractedFiles)
         {
-            try
+            GetFileExtension(extractedFiles);
+            var oto = extractedFiles.GroupBy(x => x.Extension).Select(group => new ProcessedFile()
             {
-                
-            }
-            catch (Exception)
-            {
-                return new SingleResult<ExtractedFile>(BusinessMessage.MSG001);
-            }
+                Extension = group.Key,
+                Count = group.Count(),
+                Lines = group.Sum(x => x.Lines),
+                Bytes = group.Sum(x => x.Size),
+            });
 
-            return new SingleResult<ExtractedFile>(new ExtractedFile());
+            var processedFiles = oto as ProcessedFile[] ?? oto.ToArray();
+
+            return processedFiles.ToList();
+        }
+
+        private void GetFileExtension(List<ExtractedFile> extractedFiles)
+        {
+            foreach (var file in extractedFiles)
+            {
+                var extension = file.Name.Split('.');
+                file.Extension = extension.LastOrDefault();
+            }
         }
     }
 }
