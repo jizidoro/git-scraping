@@ -37,6 +37,7 @@ namespace GitScraping.UnitTests.Tests
                 var result = processFilesUsecase.Execute(extractedFiles);
 
                 Assert.NotNull(result);
+                Assert.Equal(14,result.Count);
             }
         }
     }
