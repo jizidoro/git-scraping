@@ -26,7 +26,6 @@ namespace GitScraping.WebApi.Modules
             services.AddScoped<IProcessFilesUsecase, ProcessFilesUsecase>();
             services.AddScoped<IGetContentsOctokitUsecase, GetContentsOctokitUsecase>();
             services.AddScoped<IGetAllSourceFilesFromRepositoryUsecase, GetAllSourceFilesFromRepositoryUsecase>();
-            services.AddScoped<IHttpClientHelper, HttpClientHelper>();
 
             return services;
         }

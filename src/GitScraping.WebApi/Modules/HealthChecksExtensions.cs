@@ -1,11 +1,11 @@
 #region
 
 using System;
+using System.Globalization;
 using System.Linq;
 using System.Net.Mime;
 using System.Text.Json;
 using System.Threading.Tasks;
-using GitScraping.Core.Helpers.Extensions;
 using GitScraping.WebApi.Modules.Common.FeatureFlags;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
@@ -86,7 +86,7 @@ namespace GitScraping.WebApi.Modules
             var teste = JsonSerializer.Serialize(
                 new
                 {
-                    currentTime = HorariosFusoExtensions.getHorarioBrasilia(),
+                    currentTime = DateTime.UtcNow.ToString(CultureInfo.InvariantCulture),
                     statusApplication = result.Status.ToString(),
                     healthChecks = result.Entries.Select(e => new
                     {

@@ -24,13 +24,11 @@ namespace GitScraping.WebApi.Controllers.V1.ExtractedFileApi
     {
         private readonly IExtractedFileAppService _extractedFileAppService;
         private readonly ILogger<ExtractedFileController> _logger;
-        private readonly IMapper _mapper;
 
         public ExtractedFileController(
-            IExtractedFileAppService extractedFileAppService, IMapper mapper, ILogger<ExtractedFileController> logger)
+            IExtractedFileAppService extractedFileAppService, ILogger<ExtractedFileController> logger)
         {
             _extractedFileAppService = extractedFileAppService;
-            _mapper = mapper;
             _logger = logger;
         }
 
@@ -45,7 +43,7 @@ namespace GitScraping.WebApi.Controllers.V1.ExtractedFileApi
             }
             catch (Exception e)
             {
-                return Ok(new SingleResultDto<ExtractedFileDto>(e));
+                return Ok(new SingleResultDto<EntityDto>(e));
             }
         }
     }

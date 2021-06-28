@@ -12,8 +12,7 @@ namespace GitScraping.Application.AutoMapper
     {
         public DtoToDomainMappingProfile()
         {
-            CreateMap<ExtractedFileDto, ExtractedFile>();
-            CreateMap<ExtractedFile, ExtractedFileDto>();
+            CreateMap<ProcessedFileDto, ProcessedFile>();
         }
     }
 }

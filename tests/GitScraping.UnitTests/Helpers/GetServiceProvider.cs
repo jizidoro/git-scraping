@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace GitScraping.UnitTests.Helpers
 {
-    public class getServiceProviderDb
+    public class GetServiceProvider
     {
         public ServiceProvider Execute()
         {

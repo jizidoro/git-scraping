@@ -19,15 +19,14 @@ namespace GitScraping.Application.Services
 {
     public class ExtractedFileAppService : AppService, IExtractedFileAppService
     {
-        private readonly IHttpClientHelper _httpClientHelper;
         private readonly IProcessFilesUsecase _processFilesUsecase;
         private readonly IGetAllSourceFilesFromRepositoryUsecase _getAllSourceFilesFromRepository;
 
         public ExtractedFileAppService(
-            IMapper mapper, IHttpClientHelper httpClientHelper, IProcessFilesUsecase processFilesUsecase, IGetAllSourceFilesFromRepositoryUsecase getAllSourceFilesFromRepository)
+            IMapper mapper, IProcessFilesUsecase processFilesUsecase,
+            IGetAllSourceFilesFromRepositoryUsecase getAllSourceFilesFromRepository)
             : base(mapper)
         {
-            _httpClientHelper = httpClientHelper ?? throw new ArgumentNullException(nameof(HttpClientHelper));
             _processFilesUsecase = processFilesUsecase;
             _getAllSourceFilesFromRepository = getAllSourceFilesFromRepository;
         }
@@ -53,7 +52,5 @@ namespace GitScraping.Application.Services
             var response = Mapper.Map<List<ProcessedFileDto>>(result);
             return response;
         }
-
-        
     }
 }

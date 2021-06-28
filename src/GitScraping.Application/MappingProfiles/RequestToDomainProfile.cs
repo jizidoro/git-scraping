@@ -1,8 +1,6 @@
 ﻿#region
 
 using AutoMapper;
-using GitScraping.Application.Filters;
-using GitScraping.Application.Queries;
 
 #endregion
 
@@ -12,7 +10,6 @@ namespace GitScraping.Application.MappingProfiles
     {
         public RequestToDomainProfile()
         {
-            CreateMap<PaginationQuery, PaginationFilter>();
         }
     }
 }
