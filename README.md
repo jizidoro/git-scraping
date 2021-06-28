@@ -11,4 +11,4 @@ Framework
 
 to run
 
-go to tools=> nuget package managaer => package manager console select default project "AirplaneProject.Infrastructure" and execute "update-database" then select "AirplaneProject.WebApi" as startup project and run visual studio 2019
+you must set your git-credential on system envoiment variables
